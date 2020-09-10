@@ -2,7 +2,7 @@ SIM/GLOBAL/RUN_TYPE
 
 New: MD
 Previous: None
-Date: 2020-09-06 12:05:12.208730
+Date: 2020-09-07 15:32:18.604246
 Success: True
 ErrorMessage: None
 
@@ -10,7 +10,7 @@ SIM/GLOBAL/PRINT_LEVEL
 
 New: LOW
 Previous: None
-Date: 2020-09-06 12:05:12.208753
+Date: 2020-09-07 15:32:18.604268
 Success: True
 ErrorMessage: None
 
@@ -18,7 +18,7 @@ SIM/GLOBAL/SEED
 
 New: 1
 Previous: None
-Date: 2020-09-06 12:05:12.208758
+Date: 2020-09-07 15:32:18.604273
 Success: True
 ErrorMessage: None
 
@@ -26,7 +26,7 @@ SIM/MOTION/METHOD
 
 New: QUICKSTEP
 Previous: None
-Date: 2020-09-06 12:05:12.208766
+Date: 2020-09-07 15:32:18.604280
 Success: True
 ErrorMessage: None
 
@@ -34,7 +34,7 @@ SIM/MOTION/STRESS_TENSOR
 
 New: ANALYTICAL
 Previous: QUICKSTEP
-Date: 2020-09-06 12:05:12.208779
+Date: 2020-09-07 15:32:18.604286
 Success: True
 ErrorMessage: None
 
@@ -42,7 +42,7 @@ SIM/MOTION/DFT/ABASIS_SET_FILE_NAME
 
 New: BASIS_MOLOPT
 Previous: None
-Date: 2020-09-06 12:05:12.208791
+Date: 2020-09-07 15:32:18.604296
 Success: True
 ErrorMessage: None
 
@@ -50,7 +50,7 @@ SIM/MOTION/DFT/POTENTIAL_FILE_NAME
 
 New: GTH_POTENTIALS
 Previous: None
-Date: 2020-09-06 12:05:12.208797
+Date: 2020-09-07 15:32:18.604301
 Success: True
 ErrorMessage: None
 
@@ -58,7 +58,7 @@ SIM/MOTION/DFT/CHARGE
 
 New: 0
 Previous: None
-Date: 2020-09-06 12:05:12.208804
+Date: 2020-09-07 15:32:18.604308
 Success: True
 ErrorMessage: None
 
@@ -66,7 +66,7 @@ SIM/MOTION/DFT/MULTIPLICITY
 
 New: 1
 Previous: None
-Date: 2020-09-06 12:05:12.208810
+Date: 2020-09-07 15:32:18.604311
 Success: True
 ErrorMessage: None
 
@@ -74,7 +74,7 @@ SIM/MOTION/DFT/MGRID/CUTOFF
 
 New: 200
 Previous: None
-Date: 2020-09-06 12:05:12.208813
+Date: 2020-09-07 15:32:18.604315
 Success: True
 ErrorMessage: None
 
@@ -82,7 +82,7 @@ SIM/MOTION/DFT/MGRID/REL_CUTOFF
 
 New: 50
 Previous: None
-Date: 2020-09-06 12:05:12.286903
+Date: 2020-09-07 15:32:18.604321
 Success: True
 ErrorMessage: None
 
@@ -90,7 +90,7 @@ SIM/MOTION/DFT/MGRID/NGRIDS
 
 New: 4
 Previous: None
-Date: 2020-09-06 12:05:12.286914
+Date: 2020-09-07 15:32:18.604327
 Success: True
 ErrorMessage: None
 
@@ -98,7 +98,7 @@ SIM/MOTION/DFT/ENERGY/METHOD
 
 New: GPW
 Previous: None
-Date: 2020-09-06 12:05:12.286923
+Date: 2020-09-07 15:32:18.604334
 Success: True
 ErrorMessage: None
 
@@ -106,7 +106,7 @@ SIM/MOTION/DFT/ENERGY/EPS_DEFAULT
 
 New: 0.0001
 Previous: None
-Date: 2020-09-06 12:05:12.286933
+Date: 2020-09-07 15:32:18.604346
 Success: True
 ErrorMessage: None
 
@@ -114,7 +114,7 @@ SIM/MOTION/DFT/ENERGY/EXTRAPOLATION
 
 New: ASPC
 Previous: None
-Date: 2020-09-06 12:05:12.286941
+Date: 2020-09-07 15:32:18.604353
 Success: True
 ErrorMessage: None
 
@@ -122,7 +122,7 @@ SIM/MOTION/DFT/POISSON/PERIODIC
 
 New: XYZ
 Previous: None
-Date: 2020-09-06 12:05:12.286948
+Date: 2020-09-07 15:32:18.604360
 Success: True
 ErrorMessage: None
 
@@ -130,7 +130,7 @@ SIM/MOTION/DFT/PRINT/PRINT/SECTION_PARAMETERS
 
 New: OFF
 Previous: None
-Date: 2020-09-06 12:05:12.286958
+Date: 2020-09-07 15:32:18.604371
 Success: True
 ErrorMessage: None
 
@@ -138,7 +138,7 @@ SIM/MOTION/DFT/SCF/SCF_GUESS
 
 New: ATOMIC
 Previous: None
-Date: 2020-09-06 12:05:12.286972
+Date: 2020-09-07 15:32:18.604381
 Success: True
 ErrorMessage: None
 
@@ -146,7 +146,7 @@ SIM/MOTION/DFT/SCF/MAX_SCF
 
 New: 2
 Previous: None
-Date: 2020-09-06 12:05:12.286978
+Date: 2020-09-07 15:32:18.604388
 Success: True
 ErrorMessage: None
 
@@ -154,7 +154,7 @@ SIM/MOTION/DFT/SCF/OT/SECTION_PARAMETERS
 
 New: .TRUE.
 Previous: None
-Date: 2020-09-06 12:05:12.286990
+Date: 2020-09-07 15:32:18.604399
 Success: True
 ErrorMessage: None
 
@@ -162,7 +162,7 @@ SIM/MOTION/DFT/SCF/OT/PRECONDITIONER
 
 New: FULL_SINGLE_INVERSE
 Previous: None
-Date: 2020-09-06 12:05:12.286998
+Date: 2020-09-07 15:32:18.604409
 Success: True
 ErrorMessage: None
 
@@ -170,7 +170,7 @@ SIM/MOTION/DFT/SCF/OT/MINIMIZER
 
 New: DIIS
 Previous: None
-Date: 2020-09-06 12:05:12.287008
+Date: 2020-09-07 15:32:18.604422
 Success: True
 ErrorMessage: None
 
@@ -178,7 +178,7 @@ SIM/MOTION/DFT/SCF/OUTER_SCF/SECTION_PARAMETERS
 
 New: .TRUE.
 Previous: None
-Date: 2020-09-06 12:05:12.287013
+Date: 2020-09-07 15:32:18.604430
 Success: True
 ErrorMessage: None
 
@@ -186,7 +186,7 @@ SIM/MOTION/DFT/SCF/OUTER_SCF/MAX_SCF
 
 New: 1
 Previous: None
-Date: 2020-09-06 12:05:12.287020
+Date: 2020-09-07 15:32:18.604439
 Success: True
 ErrorMessage: None
 
@@ -194,7 +194,7 @@ SIM/MOTION/DFT/SCF/OUTER_SCF/EPS_SCF
 
 New: 0.0001
 Previous: 0.0001
-Date: 2020-09-06 12:05:12.287024
+Date: 2020-09-07 15:32:18.604446
 Success: True
 ErrorMessage: None
 
@@ -202,7 +202,7 @@ SIM/MOTION/DFT/SCF/SCF_PRINT/FORCES/SECTION_PARAMETERS
 
 New: OFF
 Previous: None
-Date: 2020-09-06 12:05:12.287030
+Date: 2020-09-07 15:32:18.604454
 Success: True
 ErrorMessage: None
 
@@ -210,7 +210,7 @@ SIM/MOTION/DFT/SCF/SCF_PRINT/DM_RESTART_WRITE
 
 New: .TRUE.
 Previous: None
-Date: 2020-09-06 12:05:12.287034
+Date: 2020-09-07 15:32:18.604458
 Success: True
 ErrorMessage: None
 
@@ -218,7 +218,7 @@ SIM/MOTION/DFT/XC/XC_FUNCTIONAL/SECTION_PARAMETERS
 
 New: PBE
 Previous: None
-Date: 2020-09-06 12:05:12.287039
+Date: 2020-09-07 15:32:18.604466
 Success: True
 ErrorMessage: None
 
@@ -226,7 +226,7 @@ SIM/MOTION/DFT/XC/VDW_POTENTIAL/POTENTIAL_TYPE
 
 New: PAIR_POTENTIAL
 Previous: None
-Date: 2020-09-06 12:05:12.287047
+Date: 2020-09-07 15:32:18.604470
 Success: True
 ErrorMessage: None
 
@@ -234,7 +234,7 @@ SIM/MOTION/DFT/XC/VDW_POTENTIAL/PAIR_POTENTIAL/TYPE
 
 New: DFTD3
 Previous: None
-Date: 2020-09-06 12:05:12.287052
+Date: 2020-09-07 15:32:18.604484
 Success: True
 ErrorMessage: None
 
@@ -242,7 +242,7 @@ SIM/MOTION/DFT/XC/VDW_POTENTIAL/PAIR_POTENTIAL/PARAMETER_FILE_NAME
 
 New: dftd3.dat
 Previous: None
-Date: 2020-09-06 12:05:12.287058
+Date: 2020-09-07 15:32:18.604490
 Success: True
 ErrorMessage: None
 
@@ -250,7 +250,7 @@ SIM/MOTION/DFT/XC/VDW_POTENTIAL/PAIR_POTENTIAL/REFERENCE_FUNCTIONAL
 
 New: PBE
 Previous: None
-Date: 2020-09-06 12:05:12.287061
+Date: 2020-09-07 15:32:18.604496
 Success: True
 ErrorMessage: None
 
@@ -258,7 +258,7 @@ SIM/MOTION/DFT/XC/VDW_POTENTIAL/PAIR_POTENTIAL/R_CUTOFF
 
 New: 8
 Previous: None
-Date: 2020-09-06 12:05:12.287064
+Date: 2020-09-07 15:32:18.604499
 Success: True
 ErrorMessage: None
 
@@ -266,7 +266,7 @@ SIM/MOTION/SUBSYS/DFT/DEFAULT_KEYWORD
 
 New: sample_project.xyz
 Previous: None
-Date: 2020-09-06 12:05:12.287070
+Date: 2020-09-07 15:32:18.604511
 Success: True
 ErrorMessage: None
 
@@ -274,7 +274,7 @@ SIM/MOTION/SUBSYS/KIND/SECTION_PARAMETERS
 
 New: Cl
 Previous: None
-Date: 2020-09-06 12:05:12.287165
+Date: 2020-09-07 15:32:18.604652
 Success: True
 ErrorMessage: None
 
@@ -282,7 +282,7 @@ SIM/MOTION/SUBSYS/KIND/BASIS_SET
 
 New: DZVP-MOLOPT-GTH
 Previous: None
-Date: 2020-09-06 12:05:12.287177
+Date: 2020-09-07 15:32:18.604665
 Success: True
 ErrorMessage: None
 
@@ -290,7 +290,7 @@ SIM/MOTION/SUBSYS/KIND/POTENTIAL
 
 New: GTH-PBE
 Previous: None
-Date: 2020-09-06 12:05:12.287184
+Date: 2020-09-07 15:32:18.604673
 Success: True
 ErrorMessage: None
 
@@ -298,7 +298,7 @@ SIM/MOTION/SUBSYS/DFT/ABC
 
 New: 10.0 10.0 10.0
 Previous: None
-Date: 2020-09-06 12:05:12.287209
+Date: 2020-09-07 15:32:18.604695
 Success: True
 ErrorMessage: None
 
@@ -306,7 +306,7 @@ SIM/MOTION/SUBSYS/DFT/ALPHA_BETA_GAMMA
 
 New: 90.0 90.0 90.0
 Previous: None
-Date: 2020-09-06 12:05:12.287216
+Date: 2020-09-07 15:32:18.604706
 Success: True
 ErrorMessage: None
 
@@ -314,7 +314,7 @@ SIM/MOTION/GEO_OPT/MAX_DR
 
 New: BFGS
 Previous: None
-Date: 2020-09-06 12:05:12.287223
+Date: 2020-09-07 15:32:18.604714
 Success: True
 ErrorMessage: None
 
@@ -322,7 +322,7 @@ SIM/MOTION/GEO_OPT/MAX_ITER
 
 New: 100
 Previous: None
-Date: 2020-09-06 12:05:12.287227
+Date: 2020-09-07 15:32:18.604721
 Success: True
 ErrorMessage: None
 
@@ -330,7 +330,7 @@ SIM/MOTION/GEO_OPT/MAX_FORCE
 
 New: 0.003
 Previous: None
-Date: 2020-09-06 12:05:12.287232
+Date: 2020-09-07 15:32:18.604726
 Success: True
 ErrorMessage: None
 
@@ -338,23 +338,23 @@ SIM/MOTION/MD/ENSEMBLE
 
 New: NVT
 Previous: None
-Date: 2020-09-06 12:05:12.287243
+Date: 2020-09-07 15:32:18.604734
 Success: True
 ErrorMessage: None
 
 SIM/MOTION/MD/STEPS
 
-New: 10
+New: 1
 Previous: None
-Date: 2020-09-06 12:05:12.287250
+Date: 2020-09-07 15:32:18.604740
 Success: True
 ErrorMessage: None
 
 SIM/MOTION/MD/TIMESTEP
 
-New: 0.1
+New: 1.0
 Previous: None
-Date: 2020-09-06 12:05:12.287268
+Date: 2020-09-07 15:32:18.604756
 Success: True
 ErrorMessage: None
 
@@ -362,7 +362,7 @@ SIM/MOTION/MD/TEMPERATURE
 
 New: 273.15
 Previous: None
-Date: 2020-09-06 12:05:12.287279
+Date: 2020-09-07 15:32:18.604770
 Success: True
 ErrorMessage: None
 
@@ -370,7 +370,7 @@ SIM/MOTION/MD/THERMOSTAT/TYPE
 
 New: None
 Previous: None
-Date: 2020-09-06 12:05:12.287284
+Date: 2020-09-07 15:32:18.604778
 Success: True
 ErrorMessage: None
 
@@ -378,7 +378,7 @@ SIM/MOTION/MD/THERMOSTAT/REGION
 
 New: MASSIVE
 Previous: None
-Date: 2020-09-06 12:05:12.287294
+Date: 2020-09-07 15:32:18.604788
 Success: True
 ErrorMessage: None
 
@@ -386,7 +386,7 @@ SIM/MOTION/MD/THERMOSTAT/NOSE/LENGTH
 
 New: 5
 Previous: None
-Date: 2020-09-06 12:05:12.287299
+Date: 2020-09-07 15:32:18.604796
 Success: True
 ErrorMessage: None
 
@@ -394,7 +394,7 @@ SIM/MOTION/MD/THERMOSTAT/NOSE/YOSHIDA
 
 New: 3
 Previous: None
-Date: 2020-09-06 12:05:12.287306
+Date: 2020-09-07 15:32:18.604800
 Success: True
 ErrorMessage: None
 
@@ -402,7 +402,7 @@ SIM/MOTION/MD/THERMOSTAT/NOSE/TIMECON
 
 New: 1000.0
 Previous: None
-Date: 2020-09-06 12:05:12.287309
+Date: 2020-09-07 15:32:18.604804
 Success: True
 ErrorMessage: None
 
@@ -410,7 +410,7 @@ SIM/MOTION/MD/THERMOSTAT/NOSE/MTS
 
 New: 2
 Previous: None
-Date: 2020-09-06 12:05:12.287312
+Date: 2020-09-07 15:32:18.604808
 Success: True
 ErrorMessage: None
 
@@ -418,7 +418,7 @@ SIM/MOTION/PRINT/STRESS/SECTION_PARAMETERS
 
 New: OFF
 Previous: None
-Date: 2020-09-06 12:05:12.287341
+Date: 2020-09-07 15:32:18.604836
 Success: True
 ErrorMessage: None
 
@@ -426,7 +426,7 @@ SIM/MOTION/PRINT/TRAJECTORY/EACH/MD
 
 New: 10
 Previous: None
-Date: 2020-09-06 12:05:12.287350
+Date: 2020-09-07 15:32:18.604852
 Success: True
 ErrorMessage: None
 
@@ -434,7 +434,7 @@ SIM/MOTION/PRINT/TRAJECTORY/FORMAT
 
 New: PDB
 Previous: None
-Date: 2020-09-06 12:05:12.287358
+Date: 2020-09-07 15:32:18.604859
 Success: True
 ErrorMessage: None
 
@@ -442,7 +442,7 @@ SIM/MOTION/PRINT/VELOCITIES/SECTION_PARAMETERS
 
 New: OFF
 Previous: None
-Date: 2020-09-06 12:05:12.287363
+Date: 2020-09-07 15:32:18.604866
 Success: True
 ErrorMessage: None
 
@@ -450,7 +450,7 @@ SIM/MOTION/PRINT/FORCES/SECTION_PARAMETERS
 
 New: OFF
 Previous: None
-Date: 2020-09-06 12:05:12.287370
+Date: 2020-09-07 15:32:18.604871
 Success: True
 ErrorMessage: None
 
@@ -458,7 +458,7 @@ SIM/MOTION/PRINT/FORCES/SECTION_PARAMETERS
 
 New: ON
 Previous: None
-Date: 2020-09-06 12:05:12.287378
+Date: 2020-09-07 15:32:18.604878
 Success: True
 ErrorMessage: None
 
@@ -466,7 +466,7 @@ SIM/MOTION/PRINT/FORCES/EACH/MD
 
 New: 500
 Previous: None
-Date: 2020-09-06 12:05:12.287386
+Date: 2020-09-07 15:32:18.604882
 Success: True
 ErrorMessage: None
 
@@ -474,7 +474,7 @@ SIM/MOTION/PRINT/FORCES/SECTION_PARAMETERS
 
 New: ON
 Previous: None
-Date: 2020-09-06 12:05:12.287393
+Date: 2020-09-07 15:32:18.604886
 Success: True
 ErrorMessage: None
 
@@ -482,7 +482,7 @@ SIM/MOTION/PRINT/FORCES/BACKUP_COPIES
 
 New: 3
 Previous: None
-Date: 2020-09-06 12:05:12.287405
+Date: 2020-09-07 15:32:18.604893
 Success: True
 ErrorMessage: None
 
@@ -490,7 +490,7 @@ SIM/MOTION/PRINT/FORCES/EACH/MD
 
 New: 1
 Previous: None
-Date: 2020-09-06 12:05:12.287422
+Date: 2020-09-07 15:32:18.604900
 Success: True
 ErrorMessage: None
 

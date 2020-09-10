@@ -106,23 +106,6 @@ def single_molecule_opt_files(molecule,functional,box,cutoff,scf_tolerance,basis
     mySim = sim.SIM()
     #setting defaults
     
-    
-    if cutoff==None:
-        cutoff=900;
-    if scf_tolerance==None:
-        scf_tolerance=1e-6
-    if basis_set_filename==None:
-        basis_set_filename='BASIS_MOLOPT'
-    if potential_filename==None:
-        potential_filename='GTH_POTENTIALS'
-    if periodicity==None:
-        periodicity='XYZ';
-    if fixed_list==None:
-        fixed_list=1
-    if n_iter==None:
-        n_iter=10
-         
-
     mySim.GLOBAL.RUN_TYPE = "GEO_OPT"
     mySim.GLOBAL.PROJECT_NAME  = name+"_opt"
     mySim.GLOBAL.PRINT_LEVEL = "LOW"

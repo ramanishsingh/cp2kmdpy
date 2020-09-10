@@ -10,5 +10,3 @@ cp2kmdpy.egg-info/PKG-INFO
 cp2kmdpy.egg-info/SOURCES.txt
 cp2kmdpy.egg-info/dependency_links.txt
 cp2kmdpy.egg-info/top_level.txt
-writer/__init__.py
-writer/setup.py

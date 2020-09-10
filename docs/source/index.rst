@@ -7,7 +7,7 @@ Welcome to CP2KMD's documentation!
 ==================================
 Overview
 --------
-cp2kmd is tool for initializing and running molecular dynamics simulations in CP2K. cp2kmd uses `mBuild <https://github.com/mosdef-hub/mbuild>`_, a `MoSDeF <https://mosdef.org/>`_ tool for generating molecular structures.
+cp2kmdpy is tool for initializing and running molecular dynamics simulations in CP2K. cp2kmd uses `mBuild <https://github.com/mosdef-hub/mbuild>`_, a `MoSDeF <https://mosdef.org/>`_ tool for generating molecular structures and `CSSI_CP2K <https://github.com/ramanishsingh/CSSI-CP2K>`_ for generating input files.
 
 
 .. toctree::
@@ -17,6 +17,7 @@ cp2kmd is tool for initializing and running molecular dynamics simulations in CP
 
    install.rst
    innerworkings.rst
+   molecule_optimization.rst
    examples.rst
 
 

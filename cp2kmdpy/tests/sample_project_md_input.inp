@@ -7,8 +7,8 @@
 &MOTION
   &MD
     ENSEMBLE        NVT
-    TIMESTEP        0.1
-    STEPS           10
+    TIMESTEP        1.0
+    STEPS           1
     TEMPERATURE     273.15
     &THERMOSTAT       
     &END THERMOSTAT       
