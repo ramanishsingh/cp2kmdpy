@@ -1,4 +1,4 @@
-# cp2kmd
+# cp2kmdpy
 
 This is workflow is intended for beginners to help them start running MD simulations in CP2K. It uses MoSDeF (https://github.com/mosdef-hub/mbuild) tools to set up input structure. Input files are generated using the codes in the cssi_cp2k folder. 
 
@@ -16,6 +16,6 @@ Make a `mosdef36` conda environment:
 conda create -n mosdef36 -c mosdef -c conda-forge -c omnia python=3.6 mbuild foyer signac signac-flow pandas
 conda activate mosdef36
 conda install -c conda-forge openbabel
-cd cp2kmd
+cd cp2kmdpy
 pip install .
 ```
