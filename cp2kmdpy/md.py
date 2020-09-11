@@ -1,7 +1,7 @@
 import numpy as np
 import mdtraj as md
 import mbuild as mb
-import setter
+
 from cp2kmdpy import runners
 import os
 import unyt as u
@@ -117,7 +117,7 @@ class MD():
     """
 
     def __init__(self,molecules=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None,input_filename=None,output_filename=None):
         self.molecules=molecules;
         self.functional=functional;
 
@@ -140,8 +140,10 @@ class MD():
         self.traj_type=traj_type
         self.traj_freq=traj_freq
         self.seed=seed
+        self.input_filename=input_filename
+        self.output_filename=output_filename
     
-    def md_files(self):
+    def md_initialization(self):
         molecules=self.molecules;
         functional=self.functional;
         box=self.box;
@@ -179,59 +181,72 @@ class MD():
         unique_atom_list.sort()
 
         if project_name==None:
-            project_name='sample_project'
+            self.project_name='sample_project'
             print('project_name not specified, set as sample_project')
         if cutoff==None:
-            cutoff=600;
+            self.cutoff=600;
             print('cutoff not specified, set as 600')
         if scf_tolerance==None:
-            scf_tolerance=1e-6
+            self.scf_tolerance=1e-6
             print('scf_tolerance not specified, set as 1e-6')
         if basis_set_filename==None:
-            basis_set_filename='BASIS_MOLOPT'
+            self.basis_set_filename='BASIS_MOLOPT'
             print('basis_set_filename not defined, set as BASIS_MOLOPT')
         if potential_filename==None:
-            potential_filename='GTH_POTENTIALS'
+            self.potential_filename='GTH_POTENTIALS'
             print('potential_filename not specified, set as GTH_POTENTIALS')
         if periodicity==None:
-            periodicity='XYZ';
+            self.periodicity='XYZ';
             print('periodicity not specified, set as XYZ')
         if simulation_time==None:
-            simulation_time=1*u.ps #ps
+            self.simulation_time=1*u.ps #ps
             print('simulation_time not specified, set as 1 ps')
 
         if time_step==None:
             lightest=min(mass_list);
 
             if lightest <1.5:
-                time_step=0.5*u.fs
+                self.time_step=0.5*u.fs
                 print('time_step not specified, time_step set as 0.5 fs as the lighest element has mass {} au'.format(lightest))
             elif (lightest>=1.5) and (lightest<40):
-                time_step=1*u.fs
+                self.time_step=1*u.fs
                 print('time_step not specified, time_step set as 1 fs as the lighest element has mass {} au'.format(lightest))
             if lightest>=40:
 
-                time_step=1.5*u.fs
+                self.time_step=1.5*u.fs
                 print('time_step not specified, time_step set as 1.5 fs as the lighest element has mass {} au'.format(lightest))
 
         if ensemble==None:
-            ensemble='NVE'
+            self.ensemble='NVE'
             print('ensemble not specified, set as NVE')
         if traj_type==None:
-            traj_type='XYZ'
+            self.traj_type='XYZ'
             print('output trajectory format set as XYZ')
         if traj_freq==None:
-            traj_freq=10
+            self.traj_freq=10
         if seed == None:
-            seed=0
+            self.seed=0
 
-        if temperature is not None:
 
-            temperature=(temperature.to('K')).value
-        if pressure is not None:
-            pressure=(pressure.to('bar')).value
-        simulation_time=(simulation_time.to('ps')).value
-        time_step=(time_step.to('fs')).value
+        if self.input_filename==None:
+            self.input_filename=self.project_name+'_md_input.inp'
+            print('input_filename not specified, set as {}'.format(self.input_filename))
+        if self.output_filename==None:
+            self.output_filename=self.project_name+'_md_output.out'
+            print('output_filename not specified, set as {}'.format(self.output_filename))
+        
+        output_pos_filename=self.project_name+"-pos-1.xyz"
+
+        print('Output position filename is {}'.format(output_pos_filename))
+
+        if self.temperature is not None:
+
+            self.temperature=(temperature.to('K')).value
+        if self.pressure is not None:
+            self.pressure=(pressure.to('bar')).value
+        
+        self.simulation_time=(self.simulation_time.to('fs')).value
+        self.time_step=(self.time_step.to('fs')).value
 
         print('You can change default settings in setter.md_files')
-        setter.md_files(molecules,functional,box,cutoff,scf_tolerance, basis_set, basis_set_filename,potential_filename, fixed_list, periodicity,simulation_time,time_step,ensemble,project_name,temperature,pressure,n_molecules,thermostat,traj_type,traj_freq,seed)
+        

@@ -11,10 +11,10 @@
  DBCSR| Communication thread load                                             87
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2020-09-07 15:32:05.155
+  **** **** ******  **  PROGRAM STARTED AT               2020-09-10 12:16:19.845
  ***** ** ***  *** **   PROGRAM STARTED ON                       LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM STARTED BY                                    rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   825
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  1025
   **** **  *******  **  PROGRAM STARTED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests
 
@@ -50,12 +50,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal              8262884       8262884       8262884       8262884
- MEMORY| MemFree               1454536       1454536       1454536       1454536
+ MEMORY| MemFree               1297572       1297572       1297572       1297572
  MEMORY| Buffers                 34032         34032         34032         34032
  MEMORY| Cached                 188576        188576        188576        188576
  MEMORY| Slab                    13868         13868         13868         13868
  MEMORY| SReclaimable             6744          6744          6744          6744
- MEMORY| MemLikelyFree         1683888       1683888       1683888       1683888
+ MEMORY| MemLikelyFree         1526924       1526924       1526924       1526924
 
 
  GENERATE|  Preliminary Number of Bonds generated:                             0
@@ -117,7 +117,7 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 P_Mix/Diag. 0.40E+00    0.7     0.71169181       -30.0175291496 -3.00E+01
+     1 P_Mix/Diag. 0.40E+00    0.6     0.71169181       -30.0175291496 -3.00E+01
 
   Leaving inner SCF loop after reaching     1 steps.
 
@@ -145,7 +145,7 @@
  --------  Informations at step =     0 ------------
   Optimization Method        =                 BFGS
   Total Energy               =       -29.9410747538
-  Used time                  =                1.479
+  Used time                  =                1.453
  ---------------------------------------------------
 
  --------------------------
@@ -200,7 +200,7 @@
   Step size                  =         0.0258877164
   Trust radius               =         0.4724315332
   Decrease in energy         =                  YES
-  Used time                  =                1.275
+  Used time                  =                1.249
 
   Convergence check :
   Max. step size             =         0.0258877164
@@ -269,7 +269,7 @@
   Step size                  =         0.0161410232
   Trust radius               =         0.4724315332
   Decrease in energy         =                   NO
-  Used time                  =                1.275
+  Used time                  =                1.278
 
   Convergence check :
   Max. step size             =         0.0161410232
@@ -338,7 +338,7 @@
   Step size                  =         0.0119252039
   Trust radius               =         0.4724315332
   Decrease in energy         =                   NO
-  Used time                  =                1.272
+  Used time                  =                1.275
 
   Convergence check :
   Max. step size             =         0.0119252039
@@ -376,7 +376,7 @@
  marketing flops                   659.344000E+03
  -------------------------------------------------------------------------------
  # multiplications                             14
- max memory usage/rank             252.289024E+06
+ max memory usage/rank             252.030976E+06
  # max total images/rank                        1
  # max 3D layers                                1
  # MPI messages exchanged                       0
@@ -521,60 +521,60 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.008    0.008    5.655    5.655
- cp_geo_opt                           1  2.0    0.000    0.000    5.315    5.315
- geoopt_bfgs                          1  3.0    0.001    0.001    5.315    5.315
- cp_eval_at                           4  4.0    0.001    0.001    5.278    5.278
- qs_forces                            4  5.0    0.000    0.000    5.277    5.277
- rebuild_ks_matrix                    8  8.5    0.000    0.000    4.309    4.309
- qs_ks_build_kohn_sham_matrix         8  9.5    0.001    0.001    4.309    4.309
- qs_vxc_create                        8 10.5    0.000    0.000    3.384    3.384
- xc_vxc_pw_create                     8 11.5    0.060    0.060    3.384    3.384
- qs_energies                          4  6.0    0.000    0.000    3.136    3.136
- pw_transfer                        156 12.6    0.013    0.013    2.831    2.831
- fft_wrap_pw1pw2                    140 13.7    0.001    0.001    2.750    2.750
- fft_wrap_pw1pw2_100                 92 14.5    0.274    0.274    2.642    2.642
- scf_env_do_scf                       4  7.0    0.000    0.000    2.544    2.544
- scf_env_do_scf_inner_loop            4  8.0    0.000    0.000    2.544    2.544
- qs_ks_update_qs_env                  4  9.0    0.000    0.000    2.197    2.197
- xc_rho_set_and_dset_create           8 12.5    0.025    0.025    2.170    2.170
- qs_ks_update_qs_env_forces           4  6.0    0.000    0.000    2.112    2.112
- fft3d_s                            141 15.6    1.651    1.651    1.667    1.667
- xc_functional_eval                   8 13.5    0.000    0.000    1.280    1.280
- pbe_lda_eval                         8 14.5    1.280    1.280    1.280    1.280
- qs_rho_update_rho                    8  9.4    0.000    0.000    0.698    0.698
- calculate_rho_elec                   8 10.4    0.058    0.058    0.698    0.698
- density_rs2pw                        8 11.4    0.001    0.001    0.629    0.629
- sum_up_and_integrate                 8 10.5    0.013    0.013    0.436    0.436
- integrate_v_rspace                   8 11.5    0.098    0.098    0.423    0.423
- pw_gather_s                         68 15.4    0.408    0.408    0.408    0.408
- init_scf_run                         4  7.0    0.000    0.000    0.401    0.401
- scf_env_initial_rho_setup            4  8.0    0.000    0.000    0.398    0.398
- pw_scatter_s                        72 15.9    0.393    0.393    0.393    0.393
- potential_pw2rs                      8 12.5    0.002    0.002    0.324    0.324
- qs_init_subsys                       1  2.0    0.001    0.001    0.309    0.309
- pw_derive                           48 13.0    0.285    0.285    0.285    0.285
- wfi_extrapolate                      4  9.0    0.000    0.000    0.259    0.259
- qs_env_setup                         1  3.0    0.000    0.000    0.247    0.247
- qs_env_rebuild_pw_env                9  6.2    0.000    0.000    0.247    0.247
- pw_env_rebuild                       1  5.0    0.000    0.000    0.246    0.246
- pw_grid_setup                        4  6.0    0.000    0.000    0.230    0.230
- pw_grid_setup_internal               4  7.0    0.007    0.007    0.230    0.230
- pw_copy                             88 13.0    0.210    0.210    0.210    0.210
- pw_poisson_solve                     8 10.5    0.121    0.121    0.206    0.206
- qs_energies_init_hamiltonians        4  7.0    0.000    0.000    0.183    0.183
- pw_grid_sort                         4  8.0    0.140    0.140    0.176    0.176
- qs_env_update_s_mstruct              4  8.0    0.000    0.000    0.166    0.166
- calculate_rho_core                   4  9.0    0.004    0.004    0.164    0.164
- pw_axpy                             64 12.2    0.129    0.129    0.129    0.129
+ CP2K                                 1  1.0    0.007    0.007    5.602    5.602
+ cp_geo_opt                           1  2.0    0.000    0.000    5.267    5.267
+ geoopt_bfgs                          1  3.0    0.001    0.001    5.267    5.267
+ cp_eval_at                           4  4.0    0.000    0.000    5.235    5.235
+ qs_forces                            4  5.0    0.000    0.000    5.234    5.234
+ rebuild_ks_matrix                    8  8.5    0.000    0.000    4.274    4.274
+ qs_ks_build_kohn_sham_matrix         8  9.5    0.001    0.001    4.274    4.274
+ qs_vxc_create                        8 10.5    0.000    0.000    3.375    3.375
+ xc_vxc_pw_create                     8 11.5    0.059    0.059    3.375    3.375
+ qs_energies                          4  6.0    0.000    0.000    3.090    3.090
+ pw_transfer                        156 12.6    0.012    0.012    2.786    2.786
+ fft_wrap_pw1pw2                    140 13.7    0.001    0.001    2.712    2.712
+ fft_wrap_pw1pw2_100                 92 14.5    0.264    0.264    2.604    2.604
+ scf_env_do_scf                       4  7.0    0.000    0.000    2.499    2.499
+ scf_env_do_scf_inner_loop            4  8.0    0.000    0.000    2.499    2.499
+ xc_rho_set_and_dset_create           8 12.5    0.022    0.022    2.190    2.190
+ qs_ks_update_qs_env                  4  9.0    0.000    0.000    2.161    2.161
+ qs_ks_update_qs_env_forces           4  6.0    0.000    0.000    2.114    2.114
+ fft3d_s                            141 15.6    1.644    1.644    1.661    1.661
+ xc_functional_eval                   8 13.5    0.000    0.000    1.289    1.289
+ pbe_lda_eval                         8 14.5    1.289    1.289    1.289    1.289
+ qs_rho_update_rho                    8  9.4    0.000    0.000    0.692    0.692
+ calculate_rho_elec                   8 10.4    0.062    0.062    0.692    0.692
+ density_rs2pw                        8 11.4    0.001    0.001    0.619    0.619
+ sum_up_and_integrate                 8 10.5    0.014    0.014    0.428    0.428
+ integrate_v_rspace                   8 11.5    0.096    0.096    0.414    0.414
+ pw_gather_s                         68 15.4    0.400    0.400    0.400    0.400
+ init_scf_run                         4  7.0    0.000    0.000    0.394    0.394
+ scf_env_initial_rho_setup            4  8.0    0.000    0.000    0.391    0.391
+ pw_scatter_s                        72 15.9    0.380    0.380    0.380    0.380
+ potential_pw2rs                      8 12.5    0.002    0.002    0.317    0.317
+ qs_init_subsys                       1  2.0    0.001    0.001    0.305    0.305
+ pw_derive                           48 13.0    0.291    0.291    0.291    0.291
+ wfi_extrapolate                      4  9.0    0.000    0.000    0.246    0.246
+ qs_env_setup                         1  3.0    0.000    0.000    0.244    0.244
+ qs_env_rebuild_pw_env                9  6.2    0.000    0.000    0.244    0.244
+ pw_env_rebuild                       1  5.0    0.000    0.000    0.243    0.243
+ pw_grid_setup                        4  6.0    0.000    0.000    0.227    0.227
+ pw_grid_setup_internal               4  7.0    0.007    0.007    0.227    0.227
+ pw_copy                             88 13.0    0.205    0.205    0.205    0.205
+ pw_poisson_solve                     8 10.5    0.116    0.116    0.193    0.193
+ qs_energies_init_hamiltonians        4  7.0    0.000    0.000    0.189    0.189
+ pw_grid_sort                         4  8.0    0.137    0.137    0.173    0.173
+ qs_env_update_s_mstruct              4  8.0    0.000    0.000    0.171    0.171
+ calculate_rho_core                   4  9.0    0.004    0.004    0.169    0.169
+ pw_axpy                             64 12.2    0.127    0.127    0.127    0.127
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 4
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2020-09-07 15:32:11.145
+  **** **** ******  **  PROGRAM ENDED AT                 2020-09-10 12:16:25.785
  ***** ** ***  *** **   PROGRAM RAN ON                           LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM RAN BY                                        rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   825
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  1025
   **** **  *******  **  PROGRAM STOPPED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests

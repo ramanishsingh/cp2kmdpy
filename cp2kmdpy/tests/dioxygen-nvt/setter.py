@@ -96,8 +96,8 @@ def single_molecule_opt_files(instance):
     fixed_list=instance.fixed_list;
     periodicity=instance.periodicity
     n_iter=instance.n_iter
-    input_filename=self.input_filename
-    output_filename=self.output_filename
+    input_filename=instance.input_filename
+    output_filename=instance.output_filename
 
     name=molecule.name
     filled_box=mb.packing.fill_box(molecule,1,box)
@@ -157,7 +157,7 @@ def single_molecule_opt_files(instance):
     mySim.FORCE_EVAL.DFT.XC.VDW_POTENTIAL.PAIR_POTENTIAL.R_CUTOFF=8
 
     mySim.FORCE_EVAL.DFT.SCF.SCF_GUESS='ATOMIC'
-    mySim.FORCE_EVAL.DFT.SCF.MAX_SCF=20
+    mySim.FORCE_EVAL.DFT.SCF.MAX_SCF=6
     mySim.FORCE_EVAL.DFT.SCF.EPS_SCF=scf_tolerance
     if periodicity=='NONE':
         mySim.FORCE_EVAL.DFT.POISSON.PERIODIC='NONE'
@@ -199,12 +199,11 @@ def md_files(instance):
     traj_type=instance.traj_type
     traj_freq=instance.traj_freq
     seed=instance.seed
-
+    input_filename=instance.input_filename
+    output_filename=instance.output_filename
     
     filled_box=mb.packing.fill_box(compound=molecules,n_compounds=n_molecules,box=box)
     initial_coord_file=project_name+".xyz"
-    md_inp_file=project_name+'_md_input.inp'
-    md_out_file=project_name+'_md_output.out'
     filled_box.save(initial_coord_file,overwrite='True')
     with open(initial_coord_file, 'r') as fin:
         data = fin.read().splitlines(True)
@@ -341,6 +340,6 @@ def md_files(instance):
 
     mySim.write_changeLog(fn="md-changeLog.out")
     mySim.write_errorLog()
-    mySim.write_inputFile(fn=md_inp_file)
-    print('MD input file saved as {}'.format(md_inp_file))
+    mySim.write_inputFile(fn=input_filename)
+    print('MD input file saved as {}'.format(input_filename))
 

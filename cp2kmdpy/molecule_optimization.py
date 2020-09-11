@@ -1,7 +1,7 @@
 import numpy as np
 import mdtraj as md
 import mbuild as mb
-import setter
+
 from cp2kmdpy import runners
 import os
 class Molecule_optimization():
@@ -31,7 +31,7 @@ class Molecule_optimization():
 
     """
     def __init__(self,molecule=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None,input_filename=None,output_filename=None):
 
         self.molecule=molecule;
         self.functional=functional;
@@ -44,8 +44,10 @@ class Molecule_optimization():
         self.periodicity=periodicity
         self.fixed_list=fixed_list;
         self.n_iter=n_iter;
+        self.input_filename=input_filename;
+        self.output_filename=output_filename;
     
-    def optimize_files(self):
+    def optimization_initialization(self):
         
         
         molecule=self.molecule;
@@ -59,37 +61,51 @@ class Molecule_optimization():
         fixed_list=self.fixed_list;
         periodicity=self.periodicity
         n_iter=self.n_iter
+        name=molecule.name;
 
         if cutoff==None:
-            cutoff=900;
+            self.cutoff=900;
             print('cutoff not specified, set as 900')
         if scf_tolerance==None:
-            scf_tolerance=1e-6
+            self.scf_tolerance=1e-6
             print('scf_tolerance not specified, set as 1e-6')
         if basis_set_filename==None:
-            basis_set_filename='BASIS_MOLOPT'
+            self.basis_set_filename='BASIS_MOLOPT'
             print('basis_set_filename not defined, set as BASIS_MOLOPT')
         if potential_filename==None:
-            potential_filename='GTH_POTENTIALS'
+            self.potential_filename='GTH_POTENTIALS'
             print('potential_filename not specified, set as GTH_POTENTIALS')
         if periodicity==None:
-            periodicity='XYZ';
+            self.periodicity='XYZ';
             print('periodicity not specified, set as XYZ')
         if fixed_list==None:
-            fixed_list=1
+            self.fixed_list='1'
             print('fixed_list not specified, set as 1')
 
 
         if n_iter==None:
-            n_iter=10
+            self.n_iter=10
             print('n_iter not specified, set as 10')
+        if self.input_filename==None:
+            self.input_filename=name+'_optimization_input.inp'
+            print('input_filename not specified, set as {}'.format(self.input_filename))
+        if self.output_filename==None:
+            self.output_filename=name+'_optimization_output.out'
+            print('output_filename not specified, set as {}'.format(self.output_filename))
+        output_pos_filename=self.molecule.name+"_opt-pos-1.xyz"
+
+        print('Output position filename is {}'.format(output_pos_filename))
 
 
         print('You can change default settings in setter.single_molecule_opt_file')
-        setter.single_molecule_opt_files(molecule,functional,box,cutoff,scf_tolerance, basis_set, basis_set_filename,potential_filename, fixed_list, periodicity,n_iter)
+        
+        #setter.single_molecule_opt_files(molecule,functional,box,cutoff,scf_tolerance, basis_set, basis_set_filename,potential_filename, fixed_list, periodicity,n_iter)
 
     def run_optimization(self):
-        runners.run_single_molecule_optimization(self)
+        input_filename=self.input_filename
+        output_filename=self.output_filename
+#        output_pos_filename=self.molecule.name+"_opt-pos-1.xyz"
+        runners.run_single_molecule_optimization(input_filename,output_filename)
 
     def return_optimized_molecule(self):
         output_pos_file=self.molecule.name+'_opt-pos-1.xyz'

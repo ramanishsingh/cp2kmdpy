@@ -1,9 +1,0 @@
-TITLE     PDB file created by CP2K version 5.1 (revision svn:18091)
-AUTHOR    rs@LAPTOP-SAG0HDJD 2020-09-07 15:33:12
-REMARK    Step 0, time = .000, E = -59.5721372424
-CRYST1   10.000   10.000   10.000  90.00  90.00  90.00
-ATOM      1 Cl                   7.613   1.407   5.720  0.00  0.00          Cl
-ATOM      2 Cl                   7.990   3.217   6.449  0.00  0.00          Cl
-ATOM      3 Cl                   7.473  -0.014   7.953  0.00  0.00          Cl
-ATOM      4 Cl                   5.488   0.008   8.050  0.00  0.00          Cl
-END

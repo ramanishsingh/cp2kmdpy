@@ -1,20 +1,20 @@
  # Version information for this restart file 
- # current date 2020-09-10 12:16:23.202
- # current working dir /mnt/c/Users/rstha/Documents/research/workflow/cp2kmdpy/cp2kmdpy/tests
+ # current date 2020-09-11 10:54:41.708
+ # current working dir /mnt/c/Users/rstha/Documents/research/workflow/cp2kmdpy/cp2kmdpy/tests/dioxygen-nvt
  # Program compiled at                              Mon Jan 15 17:12:42 UTC 2018
  # Program compiled on                                           lgw01-amd64-018
  # Program compiled for                                    Linux-x86_64-gfortran
  # Source code revision number                                         svn:18091
  &GLOBAL
    PRINT_LEVEL  LOW
-   PROJECT_NAME Cl2_opt
+   PROJECT_NAME O2_opt
    RUN_TYPE  GEO_OPT
  &END GLOBAL
  &MOTION
    &GEO_OPT
      TYPE  MINIMIZATION
      OPTIMIZER  BFGS
-     MAX_ITER  3
+     MAX_ITER  1
      MAX_DR     1.0000000000000000E-03
      MAX_FORCE     1.0000000000000000E-03
      STEP_START_VAL  1
@@ -49,16 +49,16 @@
      BASIS_SET_FILE_NAME BASIS_MOLOPT
      POTENTIAL_FILE_NAME GTH_POTENTIALS
      &SCF
-       MAX_SCF  1
+       MAX_SCF  6
        EPS_SCF     9.9999999999999995E-07
        SCF_GUESS  ATOMIC
      &END SCF
      &QS
-       EPS_DEFAULT     1.0000000000000000E-04
+       EPS_DEFAULT     9.9999999999999995E-08
      &END QS
      &MGRID
        NGRIDS  4
-       CUTOFF     2.0000000000000000E+02
+       CUTOFF     3.0000000000000000E+02
        REL_CUTOFF     5.0000000000000000E+01
      &END MGRID
      &XC
@@ -95,20 +95,19 @@
        MULTIPLE_UNIT_CELL  1 1 1
      &END CELL
      &COORD
-Cl    2.9145500000000002E-01    7.9665499999999998E+00    9.5502000000000004E-02
-Cl    1.1897136031445732E+00    6.1981431894923071E+00    2.5581108916988424E-02
+O    2.2978000000000001E-01    7.9948480000000002E+00    7.8778000000000001E-02
+O    7.3104724136781873E-01    6.7730068255378653E+00    3.1368724533947311E-02
      &END COORD
-     &KIND Cl
+     &KIND O
        BASIS_SET TZV2PX-MOLOPT-GTH
        POTENTIAL GTH-PBE
        &POTENTIAL
- 2 5
-  0.4100000000000000E+00 1 -0.6392081810000000E+01
+ 2 4
+  0.2445543000000000E+00 2 -0.1666721480000000E+02  0.2487311320000000E+01
  2
-  0.3395386400000000E+00 2  0.1521898983000000E+02 -0.4934523210000000E+01
-  0.6370442080000000E+01
-  0.3784741600000000E+00 1  0.4338775270000000E+01
-         # Potential name:  GTH-PBE  for symbol:  CL
+  0.2209559200000000E+00 1  0.1833745811000000E+02
+  0.2113324700000000E+00 0
+         # Potential name:  GTH-PBE  for symbol:  O
          # Potential read from the potential filename: GTH_POTENTIALS
        &END POTENTIAL
      &END KIND
