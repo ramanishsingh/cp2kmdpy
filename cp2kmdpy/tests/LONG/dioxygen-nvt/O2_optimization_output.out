@@ -1,0 +1,148 @@
+ DBCSR| CPU Multiplication driver                                           BLAS
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2020-09-13 17:55:46.032
+ ***** ** ***  *** **   PROGRAM STARTED ON                                cn1019
+ **    ****   ******    PROGRAM STARTED BY                              singh891
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 45487
+  **** **  *******  **  PROGRAM STARTED IN /panfs/roc/scratch/singh891/delete/cp
+                                           2kmdpy/cp2kmdpy/tests/LONG/dioxygen-n
+                                           vt
+
+ CP2K| version string:                    CP2K version 7.0 (Development Version)
+ CP2K| source code revision number:                                  git:7cd08c2
+ CP2K| cp2kflags: fftw3 parallel mpi3 scalapack                                 
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Tue May 28 11:01:45 CDT 2019
+ CP2K| Program compiled on                                                ln0003
+ CP2K| Program compiled for                                   Linux-x86-64-intel
+ CP2K| Data directory path    /panfs/roc/groups/12/siepmann/singh891/test-cp2k/c
+ CP2K| Input file name                                 O2_optimization_input.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                        BASIS_MOLOPT
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                      __STD_INPUT__
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                     O2_opt
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                       SL
+ GLOBAL| Run type                                                        GEO_OPT
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name :  AMD EPYC 7702 64-Core Processor
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            263845188     263845188     263845188     263845188
+ MEMORY| MemFree             104429864     104429864     104429864     104429864
+ MEMORY| Buffers                  5256          5256          5256          5256
+ MEMORY| Cached              136744308     136744308     136744308     136744308
+ MEMORY| Slab                  2443568       2443568       2443568       2443568
+ MEMORY| SReclaimable          1403820       1403820       1403820       1403820
+ MEMORY| MemLikelyFree       242583248     242583248     242583248     242583248
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2019)           **
+ **                                                                           **
+ *******************************************************************************
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   1
+                             - Atoms:                                          2
+                             - Shell sets:                                     2
+                             - Shells:                                        10
+                             - Primitive Cartesian functions:                 14
+                             - Cartesian basis functions:                     28
+                             - Spherical basis functions:                     26
+
+  Maximum angular momentum of- Orbital basis functions:                        2
+                             - Local part of the GTH pseudopotential:          2
+                             - Non-local part of the GTH pseudopotential:      0
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              30
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                                 0.00
+                        --------------------------------------------------------
+                        Mixing method:                           DIRECT_P_MIXING
+                        --------------------------------------------------------
+                        No outer SCF
+
+ BFGS| Use rational function optimization for step estimation:                NO
+ BFGS| Use model Hessian for initial guess:                                  YES
+ BFGS| Restart Hessian:                                                       NO
+ BFGS| Trust radius:                                                       0.472
+
+ *******************************************************************************
+ ***                     STARTING GEOMETRY OPTIMIZATION                      ***
+ ***                                   BFGS                                  ***
+ *******************************************************************************
+
+ Number of electrons:                                                         12
+ Number of occupied orbitals:                                                  6
+ Number of molecular orbitals:                                                 6
+
+ Number of orbital functions:                                                 26
+ Number of independent orbital functions:                                     26
+
+ Extrapolation method: initial_guess
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 P_Mix/Diag. 0.40E+00  108.0     0.71408121       -31.7497896155 -3.17E+01
+     2 P_Mix/Diag. 0.40E+00   88.3     0.98755507       -31.7809078585 -3.11E-02
+     3 P_Mix/Diag. 0.40E+00   88.5     0.72245567       -31.8025351880 -2.16E-02
+     4 P_Mix/Diag. 0.40E+00   87.1     0.82080999       -31.8129524437 -1.04E-02
+     5 P_Mix/Diag. 0.40E+00   87.4     0.72737683       -31.8204567351 -7.50E-03
+     6 P_Mix/Diag. 0.40E+00   88.9     0.76165984       -31.8242047249 -3.75E-03
+     7 P_Mix/Diag. 0.40E+00   87.8     0.73324895       -31.8268338078 -2.63E-03

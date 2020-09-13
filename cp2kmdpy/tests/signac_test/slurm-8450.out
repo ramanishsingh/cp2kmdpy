@@ -1,0 +1,14 @@
+Using environment configuration: DefaultSlurmEnvironment
+ERROR: An exception was raised during operation print for job a2fa2b860d0a1df3f5dbaaa3a7798a59.
+
+Traceback (most recent call last):
+  File "/home/siepmann/singh891/.local/lib/python3.6/site-packages/flow/project.py", line 2299, in _execute_operation
+    self._operation_functions[operation.name](operation.job)
+  File "/panfs/roc/scratch/singh891/delete/cp2kmdpy/cp2kmdpy/tests/signac_test/project.py", line 21, in print
+    print(volume_computed(job))
+  File "/panfs/roc/scratch/singh891/delete/cp2kmdpy/cp2kmdpy/tests/signac_test/project.py", line 21, in print
+    print(volume_computed(job))
+  File "/panfs/roc/scratch/singh891/delete/cp2kmdpy/cp2kmdpy/tests/signac_test/project.py", line 6, in volume_computed
+    return job.isfile("volume.txt")
+AttributeError: 'bool' object has no attribute 'isfile'
+Execute with '--show-traceback' or '--debug' to show the full traceback.
