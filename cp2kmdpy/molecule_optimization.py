@@ -8,7 +8,6 @@ import os
 class Molecule_optimization():
     r"""dnsdbsnbdnsb
 
-:
 
     :param molecule: Molecule whose structure needs to be optimized
     :type molecule: mBuild molecule
