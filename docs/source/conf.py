@@ -17,13 +17,13 @@ sys.path.insert(0, os.path.abspath(os.path.join('..', '..')))
 
 # -- Project information -----------------------------------------------------
 master_doc = 'index'
-project = 'CP2KMD'
+project = 'cp2kmdpy'
 copyright = '2020, Ramanish Singh'
 author = 'Ramanish Singh'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.0.1'
-
+version = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 
@@ -53,7 +53,7 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinx_rtd_theme'
-
+epub_theme = 'epub'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
