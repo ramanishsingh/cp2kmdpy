@@ -28,7 +28,6 @@ mpmath==1.1.0
 nbconvert==5.6.1
 numexpr==2.7.1
 numpy==1.18.4
-OpenMM==7.4.2
 oset==0.1.3
 pandocfilters==1.4.2
 ParmEd==3.2.0
