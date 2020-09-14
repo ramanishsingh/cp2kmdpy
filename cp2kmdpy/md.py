@@ -220,6 +220,9 @@ class MD():
         if ensemble==None:
             self.ensemble='NVE'
             print('ensemble not specified, set as NVE')
+        if temperature_ensemble(ensemble):
+            if thermostat==None:
+                self.thermostat='NOSE'
         if traj_type==None:
             self.traj_type='XYZ'
             print('output trajectory format set as XYZ')
