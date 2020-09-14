@@ -1,0 +1,10 @@
+scf_tolerance not specified, set as 1e-6
+basis_set_filename not defined, set as BASIS_MOLOPT
+potential_filename not specified, set as GTH_POTENTIALS
+time_step not specified, time_step set as 1 fs as the lighest element has mass 15.9994 au
+input_filename not specified, set as twentyO2molecules_md_input.inp
+output_filename not specified, set as twentyO2molecules_md_output.out
+Output position filename is twentyO2molecules-pos-1.xyz
+You can change default settings in setter.md_files
+MD initial structure saved as twentyO2molecules.xyz
+MD input file saved as twentyO2molecules_md_input.inp

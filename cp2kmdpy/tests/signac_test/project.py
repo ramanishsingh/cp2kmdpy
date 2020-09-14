@@ -1,4 +1,4 @@
-from flow import FlowProject
+from flow import FlowProject, directives
 import os
 
 @FlowProject.label
@@ -8,6 +8,7 @@ def volume_computed(job):
 
 @FlowProject.operation
 @FlowProject.post(volume_computed)
+@directives(nranks=4)
 def compute_volume(job):
     volume = job.sp.N * job.sp.kT / job.sp.p
     #for i in range(1000000000000):

@@ -1,0 +1,5 @@
+WARNING: $PATH does not agree with $PATH_modshare counter. The following directories' usage counters were adjusted to match. Note that this may mean that module unloading may not work correctly.
+ /home/siepmann/singh891/anaconda3/envs/mosdef36/bin
+/usr/share/Modules/init/bash: line 113: unalias: gvx: not found
+/usr/share/Modules/init/bash: line 114: unalias: gv: not found
+Using environment configuration: MangiEnvironment

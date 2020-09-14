@@ -117,7 +117,7 @@ class MD():
     """
 
     def __init__(self,molecules=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None,input_filename=None,output_filename=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None,input_filename=None,output_filename=None,initial_coordinate_filename=None):
         self.molecules=molecules;
         self.functional=functional;
 
@@ -142,7 +142,8 @@ class MD():
         self.seed=seed
         self.input_filename=input_filename
         self.output_filename=output_filename
-    
+        self.initial_coordinate_filename=initial_coordinate_filename
+
     def md_initialization(self):
         molecules=self.molecules;
         functional=self.functional;
@@ -165,7 +166,7 @@ class MD():
         traj_type=self.traj_type
         traj_freq=self.traj_freq
         seed=self.seed
-        
+        initial_coordinate_filename=self.initial_coordinate_filename        
         
         atom_list=[];
         mass_list=[];

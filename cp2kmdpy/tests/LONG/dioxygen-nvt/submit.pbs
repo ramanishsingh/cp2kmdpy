@@ -1,5 +1,5 @@
 #!/bin/bash -l        
-#PBS -l walltime=1:00:00,nodes=1:ppn=4,mem=70gb 
+#PBS -l walltime=01:00:00,nodes=1:ppn=1,mem=7gb 
 #PBS -o out.txt
 #PBS -e error.txt
 #PBS -N twentyO2
@@ -10,5 +10,4 @@ module load fftw
 module load mkl
 module load conda 
 conda activate mosdef36
-python --version
-python MDsimulation.py
+python flowtest.py
