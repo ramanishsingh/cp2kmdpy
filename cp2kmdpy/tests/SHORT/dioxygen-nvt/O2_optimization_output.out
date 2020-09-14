@@ -1,9 +1,8 @@
- DBCSR| CPU Multiplication driver                                           BLAS
+ DBCSR| Multiplication driver                                               BLAS
  DBCSR| Multrec recursion limit                                              512
  DBCSR| Multiplication stack size                                           1000
  DBCSR| Maximum elements for images                                    UNLIMITED
  DBCSR| Multiplicative factor virtual images                                   1
- DBCSR| Use multiplication densification                                       T
  DBCSR| Multiplication size stacks                                             3
  DBCSR| Number of 3D layers                                               SINGLE
  DBCSR| Use MPI memory allocation                                              T
@@ -12,24 +11,25 @@
  DBCSR| Communication thread load                                             87
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2020-09-13 16:56:38.932
- ***** ** ***  *** **   PROGRAM STARTED ON                                ln1001
- **    ****   ******    PROGRAM STARTED BY                              singh891
- ***** **    ** ** **   PROGRAM PROCESS ID                                  4157
-  **** **  *******  **  PROGRAM STARTED IN /panfs/roc/scratch/singh891/delete/cp
-                                           2kmdpy/cp2kmdpy/tests/SHORT/dioxygen-
-                                           nvt
+  **** **** ******  **  PROGRAM STARTED AT               2020-09-13 18:20:43.749
+ ***** ** ***  *** **   PROGRAM STARTED ON                       LAPTOP-SAG0HDJD
+ **    ****   ******    PROGRAM STARTED BY                                    rs
+ ***** **    ** ** **   PROGRAM PROCESS ID                                   221
+  **** **  *******  **  PROGRAM STARTED IN /mnt/c/Users/rstha/Documents/research
+                                           /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
+                                           RT/dioxygen-nvt
 
- CP2K| version string:                    CP2K version 7.0 (Development Version)
- CP2K| source code revision number:                                  git:7cd08c2
- CP2K| cp2kflags: fftw3 parallel mpi3 scalapack                                 
+ CP2K| version string:                                          CP2K version 5.1
+ CP2K| source code revision number:                                    svn:18091
+ CP2K| cp2kflags: libint fftw3 libxc parallel mpi3 scalapack libderiv_max_am1=5 
+ CP2K|            libint_max_am=6
  CP2K| is freely available from                            https://www.cp2k.org/
- CP2K| Program compiled at                          Tue May 28 11:01:45 CDT 2019
- CP2K| Program compiled on                                                ln0003
- CP2K| Program compiled for                                   Linux-x86-64-intel
- CP2K| Data directory path    /panfs/roc/groups/12/siepmann/singh891/test-cp2k/c
+ CP2K| Program compiled at                          Mon Jan 15 17:12:42 UTC 2018
+ CP2K| Program compiled on                                       lgw01-amd64-018
+ CP2K| Program compiled for                                Linux-x86_64-gfortran
+ CP2K| Data directory path                                       /usr/share/cp2k
  CP2K| Input file name                                 O2_optimization_input.inp
- 
+
  GLOBAL| Force Environment number                                              1
  GLOBAL| Basis set file name                                        BASIS_MOLOPT
  GLOBAL| Potential file name                                      GTH_POTENTIALS
@@ -43,23 +43,22 @@
  GLOBAL| All-to-all communication in single precision                          F
  GLOBAL| FFTs using library dependent lengths                                  F
  GLOBAL| Global print level                                                  LOW
- GLOBAL| MPI I/O enabled                                                       T
  GLOBAL| Total number of message passing processes                             1
  GLOBAL| Number of threads for this process                                    1
  GLOBAL| This output is from process                                           0
- GLOBAL| CPU model name :  AMD EPYC 7302P 16-Core Processor
+ GLOBAL| CPU model name :  Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
 
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
- MEMORY| MemTotal            131755236     131755236     131755236     131755236
- MEMORY| MemFree               3290936       3290936       3290936       3290936
- MEMORY| Buffers                  5256          5256          5256          5256
- MEMORY| Cached              124853216     124853216     124853216     124853216
- MEMORY| Slab                  1539088       1539088       1539088       1539088
- MEMORY| SReclaimable          1215936       1215936       1215936       1215936
- MEMORY| MemLikelyFree       129365344     129365344     129365344     129365344
+ MEMORY| MemTotal              8262884       8262884       8262884       8262884
+ MEMORY| MemFree               1525256       1525256       1525256       1525256
+ MEMORY| Buffers                 34032         34032         34032         34032
+ MEMORY| Cached                 188576        188576        188576        188576
+ MEMORY| Slab                    13868         13868         13868         13868
+ MEMORY| SReclaimable             6744          6744          6744          6744
+ MEMORY| MemLikelyFree         1754608       1754608       1754608       1754608
 
- 
+
  GENERATE|  Preliminary Number of Bonds generated:                             0
  GENERATE|  Achieved consistency in connectivity generation.
 
@@ -78,24 +77,9 @@
  **                                                                           **
  **                                                ... make the atoms dance   **
  **                                                                           **
- **            Copyright (C) by CP2K developers group (2000 - 2019)           **
+ **            Copyright (C) by CP2K developers group (2000 - 2017)           **
  **                                                                           **
  *******************************************************************************
-
-
- TOTAL NUMBERS AND MAXIMUM NUMBERS
-
-  Total number of            - Atomic kinds:                                   1
-                             - Atoms:                                          2
-                             - Shell sets:                                     2
-                             - Shells:                                        10
-                             - Primitive Cartesian functions:                 14
-                             - Cartesian basis functions:                     28
-                             - Spherical basis functions:                     26
-
-  Maximum angular momentum of- Orbital basis functions:                        2
-                             - Local part of the GTH pseudopotential:          2
-                             - Non-local part of the GTH pseudopotential:      0
 
 
  SCF PARAMETERS         Density guess:                                    ATOMIC
@@ -114,11 +98,6 @@
                         Mixing method:                           DIRECT_P_MIXING
                         --------------------------------------------------------
                         No outer SCF
-
- BFGS| Use rational function optimization for step estimation:                NO
- BFGS| Use model Hessian for initial guess:                                  YES
- BFGS| Restart Hessian:                                                       NO
- BFGS| Trust radius:                                                       0.472
 
  *******************************************************************************
  ***                     STARTING GEOMETRY OPTIMIZATION                      ***
@@ -143,32 +122,32 @@
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     1 P_Mix/Diag. 0.40E+00    1.6     1.05512880       -33.8385407101 -3.38E+01
+     1 P_Mix/Diag. 0.40E+00    2.7     1.05512881       -33.8385402231 -3.38E+01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     2 P_Mix/Diag. 0.40E+00    0.9     1.18534663       -35.6448290931 -1.81E+00
+     2 P_Mix/Diag. 0.40E+00    1.5     1.18534669       -35.6448288034 -1.81E+00
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     3 P_Mix/Diag. 0.40E+00    1.0     0.63415865       -36.4807920930 -8.36E-01
+     3 P_Mix/Diag. 0.40E+00    1.5     0.63415867       -36.4807919287 -8.36E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     4 P_Mix/Diag. 0.40E+00    1.0     0.35256145       -36.9519260397 -4.71E-01
+     4 P_Mix/Diag. 0.40E+00    1.6     0.35256146       -36.9519259424 -4.71E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     5 P_Mix/Diag. 0.40E+00    1.0     0.20295858       -37.2300638203 -2.78E-01
+     5 P_Mix/Diag. 0.40E+00    1.5     0.20295859       -37.2300637619 -2.78E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     6 P_Mix/Diag. 0.40E+00    1.0     0.11662166       -37.3968490295 -1.67E-01
+     6 P_Mix/Diag. 0.40E+00    1.4     0.11662166       -37.3968489943 -1.67E-01
 
   Leaving inner SCF loop after reaching     6 steps.
 
@@ -179,28 +158,28 @@
   Total charge density g-space grids:          -0.0000003709
 
   Overlap energy of the core charge distribution:               0.00000000000000
-  Self energy of the core charge distribution:                -83.05241415799776
-  Core Hamiltonian energy:                                     18.42779944456725
-  Hartree energy:                                              33.08522180133610
-  Exchange-correlation energy:                                 -5.85745349845884
+  Self energy of the core charge distribution:                -83.05241415799775
+  Core Hamiltonian energy:                                     18.42779951224664
+  Hartree energy:                                              33.08522177064413
+  Exchange-correlation energy:                                 -5.85745350027433
   Dispersion energy:                                           -0.00000261896721
 
-  Total energy:                                               -37.39684902952045
+  Total energy:                                               -37.39684899434852
 
- *** WARNING in qs_scf.F:542 :: SCF run NOT converged ***
+ *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -37.648157327821643
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -37.648157327810019
 
 
  --------  Informations at step =     0 ------------
   Optimization Method        =                 BFGS
   Total Energy               =       -37.6481573278
-  Used time                  =                7.640
+  Used time                  =               12.074
  ---------------------------------------------------
 
  --------------------------
@@ -227,32 +206,32 @@
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     1 P_Mix/Diag. 0.40E+00    0.9     1.61388263       -29.5632269244 -2.96E+01
+     1 P_Mix/Diag. 0.40E+00    1.3     1.61388263       -29.5632269226 -2.96E+01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     2 P_Mix/Diag. 0.40E+00    1.0     1.32469018       -31.2309368275 -1.67E+00
+     2 P_Mix/Diag. 0.40E+00    1.5     1.32469018       -31.2309368267 -1.67E+00
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     3 P_Mix/Diag. 0.40E+00    1.0     0.69708527       -32.1796822875 -9.49E-01
+     3 P_Mix/Diag. 0.40E+00    2.2     0.69708527       -32.1796822871 -9.49E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     4 P_Mix/Diag. 0.40E+00    1.0     0.39153827       -32.6911819253 -5.11E-01
+     4 P_Mix/Diag. 0.40E+00    2.5     0.39153827       -32.6911819251 -5.11E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     5 P_Mix/Diag. 0.40E+00    1.0     0.27516773       -32.9912758339 -3.00E-01
+     5 P_Mix/Diag. 0.40E+00    2.1     0.27516773       -32.9912758338 -3.00E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     6 P_Mix/Diag. 0.40E+00    1.0     0.16832947       -33.1708697629 -1.80E-01
+     6 P_Mix/Diag. 0.40E+00    1.4     0.16832947       -33.1708697629 -1.80E-01
 
   Leaving inner SCF loop after reaching     6 steps.
 
@@ -263,34 +242,34 @@
   Total charge density g-space grids:          -0.0000005604
 
   Overlap energy of the core charge distribution:               0.00000000000000
-  Self energy of the core charge distribution:                -83.05241415799776
-  Core Hamiltonian energy:                                     20.80349258325469
-  Hartree energy:                                              35.36175045936895
-  Exchange-correlation energy:                                 -6.28369566767254
+  Self energy of the core charge distribution:                -83.05241415799775
+  Core Hamiltonian energy:                                     20.80349258328723
+  Hartree energy:                                              35.36175045940635
+  Exchange-correlation energy:                                 -6.28369566766118
   Dispersion energy:                                           -0.00000297990124
 
-  Total energy:                                               -33.17086976294789
+  Total energy:                                               -33.17086976286659
 
- *** WARNING in qs_scf.F:542 :: SCF run NOT converged ***
+ *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -33.440177347121626
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -33.440177347125775
 
 
  --------  Informations at step =     1 ------------
   Optimization Method        =                 BFGS
   Total Energy               =       -33.4401773471
   Real energy change         =         4.2079799807
-  Predicted change in energy =       -12.6253580668
+  Predicted change in energy =       -12.6253580685
   Scaling factor             =         0.0017683958
   Step size                  =         0.4724315332
   Trust radius               =         0.4724315332
   Decrease in energy         =                   NO
-  Used time                  =                6.775
+  Used time                  =               12.639
 
   Convergence check :
   Max. step size             =         0.4724315332
@@ -327,7 +306,7 @@
  marketing flops                   121.680000E+03
  -------------------------------------------------------------------------------
  # multiplications                             15
- max memory usage/rank             421.134336E+06
+ max memory usage/rank             400.977920E+06
  # max total images/rank                        1
  # max 3D layers                                1
  # MPI messages exchanged                       0
@@ -345,24 +324,8 @@
    4194304 < size <= 16777216                   0                        0
   16777216 < size                               0                        0
  -------------------------------------------------------------------------------
- -                                                                             -
- -                      DBCSR MESSAGE PASSING PERFORMANCE                      -
- -                                                                             -
- -------------------------------------------------------------------------------
 
- ROUTINE             CALLS      AVE VOLUME [Bytes]
- MP_Group               25
- MP_Bcast                2                     12.
- MP_Allreduce          125                     10.
- MP_Alltoall           437                   2612.
- MP_Wait               360
- MP_ISend               60                     40.
- MP_IRecv               60                     40.
- MP_Memory             480
- -------------------------------------------------------------------------------
-
- 
- MEMORY| Estimated peak process memory [MiB]                                 402
+ MEMORY| Estimated peak process memory [MiB]                                 383
 
  -------------------------------------------------------------------------------
  -                                                                             -
@@ -371,11 +334,15 @@
  -------------------------------------------------------------------------------
 
  ROUTINE             CALLS      AVE VOLUME [Bytes]
- MP_Group                4
- MP_Bcast               16                  80966.
- MP_Allreduce          153                     18.
+ MP_Group               29
+ MP_Bcast               18                  71971.
+ MP_Allreduce          233                     16.
  MP_Sync                 4
- MP_Alltoall            28               20155392.
+ MP_Alltoall           465                1216113.
+ MP_Wait               360
+ MP_ISend               60                     40.
+ MP_IRecv               60                     40.
+ MP_Memory             600
  -------------------------------------------------------------------------------
 
 
@@ -385,109 +352,109 @@
  -                                                                             -
  -------------------------------------------------------------------------------
  
- CP2K version 7.0 (Development Version), the CP2K developers group (2018).
+ CP2K version 5.1, the CP2K developers group (2017).
  CP2K is freely available from https://www.cp2k.org/ .
 
  Schuett, Ole; Messmer, Peter; Hutter, Juerg; VandeVondele, Joost. 
  Electronic Structure Calculations on Graphics Processing Units, John Wiley & Sons, Ltd, 173-190 (2016). 
  GPU-Accelerated Sparse Matrix-Matrix Multiplication for Linear Scaling Density Functional Theory.
- https://dx.doi.org/10.1002/9781118670712.ch8
+ http://dx.doi.org/10.1002/9781118670712.ch8
 
 
  Borstnik, U; VandeVondele, J; Weber, V; Hutter, J. 
  PARALLEL COMPUTING, 40 (5-6), 47-58 (2014). 
  Sparse matrix multiplication: The distributed block-compressed sparse
  row library.
- https://dx.doi.org/10.1016/j.parco.2014.03.012
+ http://dx.doi.org/10.1016/j.parco.2014.03.012
 
 
  Hutter, J; Iannuzzi, M; Schiffmann, F; VandeVondele, J. 
  WILEY INTERDISCIPLINARY REVIEWS-COMPUTATIONAL MOLECULAR SCIENCE, 4 (1), 15-25 (2014). 
  CP2K: atomistic simulations of condensed matter systems.
- https://dx.doi.org/10.1002/wcms.1159
+ http://dx.doi.org/10.1002/wcms.1159
 
 
  Grimme, S; Ehrlich, S; Goerigk, L. 
  JOURNAL OF COMPUTATIONAL CHEMISTRY, 32, 1456 (2011). 
  Effect of the damping function in dispersion corrected density functional theory.
- https://dx.doi.org/10.1002/jcc.21759
+ http://dx.doi.org/10.1002/jcc.21759
 
 
  Grimme, S; Antony, J; Ehrlich, S; Krieg, H. 
  JOURNAL OF CHEMICAL PHYSICS, 132 (15), 154104 (2010). 
  A consistent and accurate ab initio parametrization of density
  functional dispersion correction (DFT-D) for the 94 elements H-Pu.
- https://dx.doi.org/10.1063/1.3382344
+ http://dx.doi.org/10.1063/1.3382344
 
 
  VandeVondele, J; Hutter, J. 
  JOURNAL OF CHEMICAL PHYSICS, 127 (11), 114105 (2007). 
  Gaussian basis sets for accurate calculations on molecular systems in
  gas and condensed phases.
- https://dx.doi.org/10.1063/1.2770708
+ http://dx.doi.org/10.1063/1.2770708
 
 
  Genovese, L; Deutsch, T; Goedecker, S. 
  JOURNAL OF CHEMICAL PHYSICS, 127 (5), 054704 (2007). 
  Efficient and accurate three-dimensional Poisson solver for surface
  problems.
- https://dx.doi.org/10.1063/1.2754685
+ http://dx.doi.org/10.1063/1.2754685
 
 
  Genovese, L; Deutsch, T; Neelov, A; Goedecker, S; Beylkin, G. 
  JOURNAL OF CHEMICAL PHYSICS, 125 (7), 074105 (2006). 
  Efficient solution of Poisson's equation with free boundary conditions.
- https://dx.doi.org/10.1063/1.2335442
+ http://dx.doi.org/10.1063/1.2335442
 
 
  Krack, M. 
  THEORETICAL CHEMISTRY ACCOUNTS, 114 (1-3), 145-152 (2005). 
  Pseudopotentials for H to Kr optimized for gradient-corrected
  exchange-correlation functionals.
- https://dx.doi.org/10.1007/s00214-005-0655-y
+ http://dx.doi.org/10.1007/s00214-005-0655-y
 
 
  VandeVondele, J; Krack, M; Mohamed, F; Parrinello, M; Chassaing, T;
  Hutter, J. COMPUTER PHYSICS COMMUNICATIONS, 167 (2), 103-128 (2005). 
  QUICKSTEP: Fast and accurate density functional calculations using a
  mixed Gaussian and plane waves approach.
- https://dx.doi.org/10.1016/j.cpc.2004.12.014
+ http://dx.doi.org/10.1016/j.cpc.2004.12.014
 
 
  Frigo, M; Johnson, SG. 
  PROCEEDINGS OF THE IEEE, 93 (2), 216-231 (2005). 
  The design and implementation of FFTW3.
- https://dx.doi.org/10.1109/JPROC.2004.840301
+ http://dx.doi.org/10.1109/JPROC.2004.840301
 
 
  Kolafa, J. 
  JOURNAL OF COMPUTATIONAL CHEMISTRY, 25 (3), 335-342 (2004). 
  Time-reversible always stable predictor-corrector method for molecular dynamics of polarizable molecules.
- https://dx.doi.org/10.1002/jcc.10385
+ http://dx.doi.org/10.1002/jcc.10385
 
 
  Hartwigsen, C; Goedecker, S; Hutter, J. 
  PHYSICAL REVIEW B, 58 (7), 3641-3662 (1998). 
  Relativistic separable dual-space Gaussian pseudopotentials from H to Rn.
- https://dx.doi.org/10.1103/PhysRevB.58.3641
+ http://dx.doi.org/10.1103/PhysRevB.58.3641
 
 
  Lippert, G; Hutter, J; Parrinello, M. 
  MOLECULAR PHYSICS, 92 (3), 477-487 (1997). 
  A hybrid Gaussian and plane wave density functional scheme.
- https://dx.doi.org/10.1080/002689797170220
+ http://dx.doi.org/10.1080/002689797170220
 
 
  Perdew, JP; Burke, K; Ernzerhof, M. 
  PHYSICAL REVIEW LETTERS, 77 (18), 3865-3868 (1996). 
  Generalized gradient approximation made simple.
- https://dx.doi.org/10.1103/PhysRevLett.77.3865
+ http://dx.doi.org/10.1103/PhysRevLett.77.3865
 
 
  Goedecker, S; Teter, M; Hutter, J. 
  PHYSICAL REVIEW B, 54 (3), 1703-1710 (1996). 
  Separable dual-space Gaussian pseudopotentials.
- https://dx.doi.org/10.1103/PhysRevB.54.1703
+ http://dx.doi.org/10.1103/PhysRevB.54.1703
 
 
  -------------------------------------------------------------------------------
@@ -497,57 +464,50 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.021    0.021   15.021   15.021
- cp_geo_opt                           1  2.0    0.000    0.000   14.445   14.445
- geoopt_bfgs                          1  3.0    0.001    0.001   14.445   14.445
- cp_eval_at                           2  4.0    0.000    0.000   14.413   14.413
- qs_forces                            2  5.0    0.000    0.000   14.413   14.413
- rebuild_ks_matrix                   14  9.6    0.000    0.000   12.891   12.891
- qs_ks_build_kohn_sham_matrix        14 10.6    0.002    0.002   12.891   12.891
- qs_energies                          2  6.0    0.000    0.000   12.658   12.658
- scf_env_do_scf                       2  7.0    0.000    0.000   12.260   12.260
- scf_env_do_scf_inner_loop           12  8.0    0.001    0.001   12.260   12.260
- qs_ks_update_qs_env                 12  9.0    0.000    0.000   11.146   11.146
- qs_vxc_create                       14 11.6    0.000    0.000    7.357    7.357
- xc_vxc_pw_create                    14 12.6    0.154    0.154    7.356    7.356
- pw_transfer                        268 13.3    0.018    0.018    6.350    6.350
- fft_wrap_pw1pw2                    268 14.3    0.002    0.002    6.332    6.332
- fft_wrap_pw1pw2_150                184 15.3    0.336    0.336    6.170    6.170
- xc_rho_set_and_dset_create          14 13.6    0.052    0.052    5.140    5.140
- pw_poisson_solve                    14 11.6    0.209    0.209    4.288    4.288
- fft3d_s                            269 16.3    3.530    3.530    3.534    3.534
- xc_functional_eval                  14 14.6    0.000    0.000    3.458    3.458
- pbe_lda_eval                        14 15.6    3.458    3.458    3.458    3.458
- ps_wavelet_solve                    14 12.6    2.529    2.529    2.560    2.560
- qs_ks_update_qs_env_forces           2  6.0    0.000    0.000    1.746    1.746
- qs_rho_update_rho                   14  9.1    0.000    0.000    1.329    1.329
- calculate_rho_elec                  14 10.1    0.126    0.126    1.329    1.329
- pw_scatter_s                       140 16.7    1.269    1.269    1.269    1.269
- density_rs2pw                       14 11.1    0.001    0.001    1.188    1.188
- pw_gather_s                        128 15.9    1.184    1.184    1.184    1.184
- sum_up_and_integrate                14 11.6    0.065    0.065    0.727    0.727
- integrate_v_rspace                  14 12.6    0.073    0.073    0.663    0.663
- potential_pw2rs                     14 13.6    0.003    0.003    0.589    0.589
- qs_init_subsys                       1  2.0    0.001    0.001    0.530    0.530
- pw_poisson_rebuild                  14 12.6    0.000    0.000    0.476    0.476
- ps_wavelet_create                    1 14.0    0.000    0.000    0.476    0.476
- RS_z_slice_distribution              1 15.0    0.476    0.476    0.476    0.476
- qs_env_setup                         1  3.0    0.000    0.000    0.475    0.475
- qs_env_rebuild_pw_env                5  6.0    0.000    0.000    0.475    0.475
- pw_env_rebuild                       1  5.0    0.000    0.000    0.475    0.475
- pw_grid_setup                        4  6.0    0.000    0.000    0.460    0.460
- pw_grid_setup_internal               4  7.0    0.010    0.010    0.460    0.460
- pw_grid_sort                         4  8.0    0.280    0.280    0.403    0.403
- pw_derive                           84 14.1    0.306    0.306    0.306    0.306
+ CP2K                                 1  1.0    0.015    0.015   25.315   25.315
+ cp_geo_opt                           1  2.0    0.000    0.000   24.738   24.738
+ geoopt_bfgs                          1  3.0    0.001    0.001   24.738   24.738
+ cp_eval_at                           2  4.0    0.000    0.000   24.694   24.694
+ qs_forces                            2  5.0    0.000    0.000   24.694   24.694
+ qs_energies                          2  6.0    0.000    0.000   22.110   22.110
+ rebuild_ks_matrix                   14  9.6    0.000    0.000   22.023   22.023
+ qs_ks_build_kohn_sham_matrix        14 10.6    0.002    0.002   22.023   22.023
+ scf_env_do_scf                       2  7.0    0.000    0.000   21.534   21.534
+ scf_env_do_scf_inner_loop           12  8.0    0.002    0.002   21.534   21.534
+ qs_ks_update_qs_env                 12  9.0    0.000    0.000   19.443   19.443
+ qs_vxc_create                       14 11.6    0.000    0.000   12.911   12.911
+ xc_vxc_pw_create                    14 12.6    0.234    0.234   12.911   12.911
+ pw_transfer                        268 13.3    0.027    0.027   12.070   12.070
+ fft_wrap_pw1pw2                    268 14.3    0.003    0.003   12.043   12.043
+ fft_wrap_pw1pw2_150                184 15.3    0.974    0.974   11.783   11.783
+ xc_rho_set_and_dset_create          14 13.6    0.081    0.081    8.457    8.457
+ fft3d_s                            269 16.3    7.341    7.341    7.381    7.381
+ pw_poisson_solve                    14 11.6    0.397    0.397    6.534    6.534
+ xc_functional_eval                  14 14.6    0.000    0.000    5.003    5.003
+ pbe_lda_eval                        14 15.6    5.003    5.003    5.003    5.003
+ ps_wavelet_solve                    14 12.6    3.115    3.115    3.226    3.226
+ qs_ks_update_qs_env_forces           2  6.0    0.000    0.000    2.580    2.580
+ qs_rho_update_rho                   14  9.1    0.000    0.000    2.372    2.372
+ calculate_rho_elec                  14 10.1    0.120    0.120    2.372    2.372
+ density_rs2pw                       14 11.1    0.001    0.001    2.215    2.215
+ pw_gather_s                        128 15.9    1.926    1.926    1.926    1.926
+ pw_scatter_s                       140 16.7    1.756    1.756    1.756    1.756
+ sum_up_and_integrate                14 11.6    0.053    0.053    1.474    1.474
+ integrate_v_rspace                  14 12.6    0.101    0.101    1.421    1.421
+ potential_pw2rs                     14 13.6    0.006    0.006    1.318    1.318
+ pw_derive                           84 14.1    1.011    1.011    1.011    1.011
+ pw_poisson_rebuild                  14 12.6    0.000    0.000    0.796    0.796
+ ps_wavelet_create                    1 14.0    0.000    0.000    0.796    0.796
+ RS_z_slice_distribution              1 15.0    0.796    0.796    0.796    0.796
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 16
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2020-09-13 16:56:54.035
- ***** ** ***  *** **   PROGRAM RAN ON                                    ln1001
- **    ****   ******    PROGRAM RAN BY                                  singh891
- ***** **    ** ** **   PROGRAM PROCESS ID                                  4157
-  **** **  *******  **  PROGRAM STOPPED IN /panfs/roc/scratch/singh891/delete/cp
-                                           2kmdpy/cp2kmdpy/tests/SHORT/dioxygen-
-                                           nvt
+  **** **** ******  **  PROGRAM ENDED AT                 2020-09-13 18:21:10.200
+ ***** ** ***  *** **   PROGRAM RAN ON                           LAPTOP-SAG0HDJD
+ **    ****   ******    PROGRAM RAN BY                                        rs
+ ***** **    ** ** **   PROGRAM PROCESS ID                                   221
+  **** **  *******  **  PROGRAM STOPPED IN /mnt/c/Users/rstha/Documents/research
+                                           /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
+                                           RT/dioxygen-nvt

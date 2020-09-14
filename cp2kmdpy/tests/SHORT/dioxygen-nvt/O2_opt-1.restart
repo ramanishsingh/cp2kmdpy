@@ -1,10 +1,10 @@
  # Version information for this restart file 
- # current date 2020-09-13 16:56:53.984
- # current working dir /panfs/roc/scratch/singh891/delete/cp2kmdpy/cp2kmdpy/tests/SHORT/dioxygen-nvt
- # Program compiled at                              Tue May 28 11:01:45 CDT 2019
- # Program compiled on                                                    ln0003
- # Program compiled for                                       Linux-x86-64-intel
- # Source code revision number                                       git:7cd08c2
+ # current date 2020-09-13 18:21:10.148
+ # current working dir /mnt/c/Users/rstha/Documents/research/workflow/cp2kmdpy/cp2kmdpy/tests/SHORT/dioxygen-nvt
+ # Program compiled at                              Mon Jan 15 17:12:42 UTC 2018
+ # Program compiled on                                           lgw01-amd64-018
+ # Program compiled for                                    Linux-x86_64-gfortran
+ # Source code revision number                                         svn:18091
  &GLOBAL
    PRINT_LEVEL  LOW
    PROJECT_NAME O2_opt
@@ -98,7 +98,7 @@
      &END CELL
      &COORD
 O    2.2978000000000001E-01    7.9948480000000002E+00    7.8778000000000001E-02
-O    7.8962644577268759E-01    6.6102430976921296E+00   -2.2357700000000003E-01
+O    7.8962644577316710E-01    6.6102430976927185E+00   -2.2357700000000003E-01
      &END COORD
      &KIND O
        BASIS_SET DZVP-MOLOPT-GTH
