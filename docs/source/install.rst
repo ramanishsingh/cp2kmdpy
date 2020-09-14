@@ -12,10 +12,12 @@ You can use the following commands to create a virtual conda environment with al
 >>> conda create -n mosdef36 -c mosdef -c conda-forge -c omnia python=3.6 mbuild foyer signac signac-flow pandas
 >>> conda activate mosdef36
 >>> conda install -c conda-forge openbabel
->>> git clone   
+>>> pip install unyt
+>>> git clone https://github.com/ramanishsingh/cp2kmdpy.git
 >>> cd cp2kmdpy
 >>> pip install -e .
->>> pip install unyt
+>>> git clone https://github.com/ramanishsingh/CSSI-CP2K.git
+>>> cd CSSI-CP2K
 >>> pip install -e .
 
 

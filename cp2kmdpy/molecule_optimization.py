@@ -4,8 +4,12 @@ import mbuild as mb
 
 from cp2kmdpy import runners
 import os
+
 class Molecule_optimization():
-    r"""Base class for running molecule optimization.
+    r"""dnsdbsnbdnsb
+
+:
+
     :param molecule: Molecule whose structure needs to be optimized
     :type molecule: mBuild molecule
     :param functional: DFT XC functional to be used
@@ -30,6 +34,7 @@ class Molecule_optimization():
     :type n_iter: positive integer, optional
 
     """
+
     def __init__(self,molecule=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
                  basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None,input_filename=None,output_filename=None):
 
