@@ -6,7 +6,7 @@ from cp2kmdpy import runners
 import os
 
 class Molecule_optimization():
-    r"""Test1
+    r"""
 
     :param molecule: Molecule whose structure needs to be optimized
     :type molecule: mBuild molecule
