@@ -116,9 +116,11 @@ Time for which simulation should be run. It should be a ``unyt_quantity``.
 For example if the simulation should be run for 1 ps , ``simulation_time`` can be set as:
 
 .. code-block:: python
+
   import unyt as u
 
   simulation_time=1*u.ps
+
 The default value of ``simulation_time`` is 10 ps.
 
 time_step
@@ -126,6 +128,7 @@ time_step
 Time step for the molecula dynamics simulation. Should be a ``unyt_quantity``.
 
 .. code-block:: python
+
   import unyt as u
 
   time_step=1*u.fs
@@ -144,6 +147,7 @@ temperature
 Temperature of the ensemble, if required. Must be specified as a ``unyt_quantity``.
 
 .. code-block:: python
+
   import unyt as u
 
   temperature=298*u.K
@@ -153,6 +157,7 @@ pressure
 Pressure of the ensemble, if required. Must be specified as a ``unyt_quantity``.
 
 .. code-block:: python
+
   import unyt as u
 
   pressure=1*u.bar
@@ -197,6 +202,7 @@ Dinitrogen *NpT* MD
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
+
   # ### Loading modules
   import numpy as np
   import unyt as u
