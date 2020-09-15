@@ -17,8 +17,9 @@ cp2kmdpy is tool for initializing and running molecular dynamics simulations in 
 
    install.rst
    install_cp2k.rst
-   innerworkings.rst
+
    molecule_optimization.rst
+   md.rst
    examples.rst
 
 

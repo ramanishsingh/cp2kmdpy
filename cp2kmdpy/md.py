@@ -71,7 +71,10 @@ def temperature_ensemble(val):
 
 
 class MD():
-    r"""Base class for running molecule optimization.
+    r"""
+
+    Base class for running molecule optimization.
+
     :param molecules: Molecule(s) in the simulation box
     :type molecule: list, each element is an mBuild molecule
     :param functional: DFT XC functional to be used
@@ -116,6 +119,7 @@ class MD():
     :type seed: integer, optional
     :param initial_coordinate_filename: Structure filename if user is providing their own initial structure for md
     :type initial_coordinate_filename: string, optional
+
     """
 
     def __init__(self,molecules=None, functional=None,box=None,cutoff=None, scf_tolerance=None,

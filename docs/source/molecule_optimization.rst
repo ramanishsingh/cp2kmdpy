@@ -5,6 +5,9 @@ This functionality can be used to first optimize the structure of the molecules 
 Optimization of a molecule structure is optional before the main molecular dynamics run, but is generally recommended.
 
 
+Molecule_optimization class
+****************************
+
 .. autoclass:: cp2kmdpy.molecule_optimization.Molecule_optimization
     :members:
 
@@ -22,7 +25,7 @@ It can be done as follows:
   )
 
 molecule
-~~~~~~~~
+~~~~~~~~~
 The ``molecule`` is an instance of ``mBuild.Compund``. For example, if the molecule is an ethane molecule it can be created as follows:
 
 .. code-block:: python
@@ -106,3 +109,63 @@ Consider a system which is periodic in only X and Y direction. It can be specifi
 n_iter
 ~~~~~~~
 Number of iterations to conducted. Should be a positive integer.
+
+Running molecule optimization
+*********************************
+
+0. Copy the setter.py file from ``cp2kmdpy/setter.py`` and change any settings if needed
+1. Instantiate a ``cp2kmdpy.molecule_optimization.Molecule_optimization`` class and set all the attributes
+2. Run the ``optimization_initialization`` method on that instance
+3. Generate input files using ``setter.single_molecule_opt_files`` function
+4. Run molecule optimization using the ``run_optimization()`` method
+
+Example
+***********************
+
+Dioxygen structure optimization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+  # ### Loading modules
+  import numpy as np
+  import unyt as u
+  import mbuild as mb
+  from cp2kmdpy.molecule_optimization import Molecule_optimization # for single molecule optimization
+  from cp2kmdpy.md import MD # for running MD
+  from cp2kmdpy import runners
+  import setter
+
+  #Defining the molecule we want to simulate
+
+  class O2(mb.Compound): # this class builds an oxygen molecule with a bond-length given in the oxygen2 x coor (nm)
+      def __init__(self):
+          super(O2, self).__init__()
+
+          oxygen1= mb.Particle(pos=[0.0, 0.0, 0.0], name='O')
+          oxygen2= mb.Particle(pos=[0.15, 0.0, 0.0], name='O')
+          self.add([oxygen2,oxygen1])
+          self.add_bond((oxygen2,oxygen1))
+
+  molecule=O2();
+
+  #Defining an mBuild box
+  box=mb.box.Box(lengths=[2,2,2])
+
+  #Creating an instance of the molecule optimization class
+  oxygen_optimization=Molecule_optimization(molecule=molecule,basis_set={'O':'DZVP-MOLOPT-GTH'},box=box,cutoff=600,functional='PBE',periodicity='NONE',n_iter=100)
+
+  #Initializing the optimization
+  oxygen_optimization.optimization_initialization()
+
+
+  #Generating optimization input files
+  setter.single_molecule_opt_files(oxygen_optimization)
+
+  #Running optimization
+  oxygen_optimization.run_optimization()
+
+
+  #Retrieving the structure of optimized molecule
+  optimized_oxygen=oxygen_optimization.return_optimized_molecule()
+
