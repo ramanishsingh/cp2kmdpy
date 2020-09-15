@@ -6,4 +6,3 @@ cp2kmdpy is tool for initializing and running molecular dynamics simulations in 
 Documentation
 =============
 The online documentation is hosted at [read the docs](https://cp2kmdpy.readthedocs.io/en/latest/).
-```
