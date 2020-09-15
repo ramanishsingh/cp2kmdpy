@@ -1,9 +1,0 @@
-WARNING: $PATH does not agree with $PATH_modshare counter. The following directories' usage counters were adjusted to match. Note that this may mean that module unloading may not work correctly.
- /home/siepmann/singh891/anaconda3/envs/mosdef36/bin
-/usr/share/Modules/init/bash: line 113: unalias: gvx: not found
-/usr/share/Modules/init/bash: line 114: unalias: gv: not found
-forrtl: error (78): process killed (SIGTERM)
-Image              PC                Routine            Line        Source             
-cp2k.popt          0000000003309F7A  Unknown               Unknown  Unknown
-libpthread-2.17.s  00002B038F369630  Unknown               Unknown  Unknown
-libmkl_def.so      00002B039279BC0E  Unknown               Unknown  Unknown

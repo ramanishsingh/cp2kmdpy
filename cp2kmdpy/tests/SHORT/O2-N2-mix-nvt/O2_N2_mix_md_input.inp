@@ -11,9 +11,15 @@
     STEPS           10
     TEMPERATURE     273.15
     &THERMOSTAT       
+      TYPE            NOSE 
+      REGION          MASSIVE 
+      &NOSE             
+        LENGTH       5
+        MTS          2
+        TIMECON      1000.0
+        YOSHIDA      3
+      &END NOSE             
     &END THERMOSTAT       
-    &BAROSTAT       
-    &END BAROSTAT       
     &AVERAGES       
     &END AVERAGES       
     &PRINT       

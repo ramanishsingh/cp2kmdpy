@@ -202,14 +202,27 @@ def md_files(instance):
     input_filename=instance.input_filename
     output_filename=instance.output_filename
     
-    filled_box=mb.packing.fill_box(compound=molecules,n_compounds=n_molecules,box=box)
-    initial_coord_file=project_name+".xyz"
-    filled_box.save(initial_coord_file,overwrite='True')
-    with open(initial_coord_file, 'r') as fin:
-        data = fin.read().splitlines(True)
-    with open(initial_coord_file, 'w') as fout:
-        fout.writelines(data[2:]) #deleting first two lines
+    initial_coordinate_filename=instance.initial_coordinate_filename
+
+    if initial_coordinate_filename is None:
+
+        filled_box=mb.packing.fill_box(compound=molecules,n_compounds=n_molecules,box=box)
+        initial_coord_file=project_name+".xyz"
+        filled_box.save(initial_coord_file,overwrite='True')
+        with open(initial_coord_file, 'r') as fin:
+            data = fin.read().splitlines(True)
+        with open(initial_coord_file, 'w') as fout:
+            fout.writelines(data[2:]) #deleting first two lines
+    else:
+        filled_box=mb.load(initial_coordinate_filename)
+        initial_coord_file=project_name+".xyz"
+        filled_box.save(initial_coord_file,overwrite='True')
+        with open(initial_coord_file, 'r') as fin:
+            data = fin.read().splitlines(True)
+        with open(initial_coord_file, 'w') as fout:
+            fout.writelines(data[2:]) #deleting first two lines
     print('MD initial structure saved as {}'.format(initial_coord_file))
+
     
     atom_list=[];
     mass_list=[];
@@ -246,7 +259,7 @@ def md_files(instance):
     mySim.FORCE_EVAL.DFT.MGRID.REL_CUTOFF=50
     mySim.FORCE_EVAL.DFT.MGRID.NGRIDS=4
     mySim.FORCE_EVAL.DFT.QS.METHOD='GPW'
-    mySim.FORCE_EVAL.DFT.QS.EPS_DEFAULT=1E-7
+    mySim.FORCE_EVAL.DFT.QS.EPS_DEFAULT=1E-8
     mySim.FORCE_EVAL.DFT.QS.EXTRAPOLATION='ASPC'
     mySim.FORCE_EVAL.DFT.POISSON.PERIODIC=periodicity
     mySim.FORCE_EVAL.DFT.PRINT.E_DENSITY_CUBE.SECTION_PARAMETERS="OFF"

@@ -11,10 +11,10 @@
  DBCSR| Communication thread load                                             87
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2020-09-13 18:20:43.749
+  **** **** ******  **  PROGRAM STARTED AT               2020-09-14 18:46:09.953
  ***** ** ***  *** **   PROGRAM STARTED ON                       LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM STARTED BY                                    rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   221
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  2878
   **** **  *******  **  PROGRAM STARTED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
                                            RT/dioxygen-nvt
@@ -51,12 +51,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal              8262884       8262884       8262884       8262884
- MEMORY| MemFree               1525256       1525256       1525256       1525256
+ MEMORY| MemFree               2113440       2113440       2113440       2113440
  MEMORY| Buffers                 34032         34032         34032         34032
  MEMORY| Cached                 188576        188576        188576        188576
  MEMORY| Slab                    13868         13868         13868         13868
  MEMORY| SReclaimable             6744          6744          6744          6744
- MEMORY| MemLikelyFree         1754608       1754608       1754608       1754608
+ MEMORY| MemLikelyFree         2342792       2342792       2342792       2342792
 
 
  GENERATE|  Preliminary Number of Bonds generated:                             0
@@ -122,32 +122,32 @@
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     1 P_Mix/Diag. 0.40E+00    2.7     1.05512881       -33.8385402231 -3.38E+01
+     1 P_Mix/Diag. 0.40E+00    2.6     1.05512881       -33.8385402231 -3.38E+01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     2 P_Mix/Diag. 0.40E+00    1.5     1.18534669       -35.6448288034 -1.81E+00
+     2 P_Mix/Diag. 0.40E+00    1.7     1.18534669       -35.6448288034 -1.81E+00
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     3 P_Mix/Diag. 0.40E+00    1.5     0.63415867       -36.4807919287 -8.36E-01
+     3 P_Mix/Diag. 0.40E+00    1.7     0.63415867       -36.4807919287 -8.36E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     4 P_Mix/Diag. 0.40E+00    1.6     0.35256146       -36.9519259424 -4.71E-01
+     4 P_Mix/Diag. 0.40E+00    1.8     0.35256146       -36.9519259424 -4.71E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     5 P_Mix/Diag. 0.40E+00    1.5     0.20295859       -37.2300637619 -2.78E-01
+     5 P_Mix/Diag. 0.40E+00    1.8     0.20295859       -37.2300637619 -2.78E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     6 P_Mix/Diag. 0.40E+00    1.4     0.11662166       -37.3968489943 -1.67E-01
+     6 P_Mix/Diag. 0.40E+00    1.7     0.11662166       -37.3968489943 -1.67E-01
 
   Leaving inner SCF loop after reaching     6 steps.
 
@@ -179,7 +179,7 @@
  --------  Informations at step =     0 ------------
   Optimization Method        =                 BFGS
   Total Energy               =       -37.6481573278
-  Used time                  =               12.074
+  Used time                  =               13.465
  ---------------------------------------------------
 
  --------------------------
@@ -206,32 +206,32 @@
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     1 P_Mix/Diag. 0.40E+00    1.3     1.61388263       -29.5632269226 -2.96E+01
+     1 P_Mix/Diag. 0.40E+00    1.5     1.61388263       -29.5632269226 -2.96E+01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     2 P_Mix/Diag. 0.40E+00    1.5     1.32469018       -31.2309368267 -1.67E+00
+     2 P_Mix/Diag. 0.40E+00    1.7     1.32469018       -31.2309368267 -1.67E+00
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     3 P_Mix/Diag. 0.40E+00    2.2     0.69708527       -32.1796822871 -9.49E-01
+     3 P_Mix/Diag. 0.40E+00    1.7     0.69708527       -32.1796822871 -9.49E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     4 P_Mix/Diag. 0.40E+00    2.5     0.39153827       -32.6911819251 -5.11E-01
+     4 P_Mix/Diag. 0.40E+00    1.7     0.39153827       -32.6911819251 -5.11E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     5 P_Mix/Diag. 0.40E+00    2.1     0.27516773       -32.9912758338 -3.00E-01
+     5 P_Mix/Diag. 0.40E+00    1.7     0.27516773       -32.9912758338 -3.00E-01
 
  *** WARNING in pw/ps_wavelet_methods.F:236 :: Density non-zero on the ***
  *** edges of the unit cell: wrong results in WAVELET solver           ***
 
-     6 P_Mix/Diag. 0.40E+00    1.4     0.16832947       -33.1708697629 -1.80E-01
+     6 P_Mix/Diag. 0.40E+00    1.9     0.16832947       -33.1708697629 -1.80E-01
 
   Leaving inner SCF loop after reaching     6 steps.
 
@@ -269,7 +269,7 @@
   Step size                  =         0.4724315332
   Trust radius               =         0.4724315332
   Decrease in energy         =                   NO
-  Used time                  =               12.639
+  Used time                  =               12.192
 
   Convergence check :
   Max. step size             =         0.4724315332
@@ -306,7 +306,7 @@
  marketing flops                   121.680000E+03
  -------------------------------------------------------------------------------
  # multiplications                             15
- max memory usage/rank             400.977920E+06
+ max memory usage/rank             401.256448E+06
  # max total images/rank                        1
  # max 3D layers                                1
  # MPI messages exchanged                       0
@@ -464,50 +464,57 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.015    0.015   25.315   25.315
- cp_geo_opt                           1  2.0    0.000    0.000   24.738   24.738
- geoopt_bfgs                          1  3.0    0.001    0.001   24.738   24.738
- cp_eval_at                           2  4.0    0.000    0.000   24.694   24.694
- qs_forces                            2  5.0    0.000    0.000   24.694   24.694
- qs_energies                          2  6.0    0.000    0.000   22.110   22.110
- rebuild_ks_matrix                   14  9.6    0.000    0.000   22.023   22.023
- qs_ks_build_kohn_sham_matrix        14 10.6    0.002    0.002   22.023   22.023
- scf_env_do_scf                       2  7.0    0.000    0.000   21.534   21.534
- scf_env_do_scf_inner_loop           12  8.0    0.002    0.002   21.534   21.534
- qs_ks_update_qs_env                 12  9.0    0.000    0.000   19.443   19.443
- qs_vxc_create                       14 11.6    0.000    0.000   12.911   12.911
- xc_vxc_pw_create                    14 12.6    0.234    0.234   12.911   12.911
- pw_transfer                        268 13.3    0.027    0.027   12.070   12.070
- fft_wrap_pw1pw2                    268 14.3    0.003    0.003   12.043   12.043
- fft_wrap_pw1pw2_150                184 15.3    0.974    0.974   11.783   11.783
- xc_rho_set_and_dset_create          14 13.6    0.081    0.081    8.457    8.457
- fft3d_s                            269 16.3    7.341    7.341    7.381    7.381
- pw_poisson_solve                    14 11.6    0.397    0.397    6.534    6.534
- xc_functional_eval                  14 14.6    0.000    0.000    5.003    5.003
- pbe_lda_eval                        14 15.6    5.003    5.003    5.003    5.003
- ps_wavelet_solve                    14 12.6    3.115    3.115    3.226    3.226
- qs_ks_update_qs_env_forces           2  6.0    0.000    0.000    2.580    2.580
- qs_rho_update_rho                   14  9.1    0.000    0.000    2.372    2.372
- calculate_rho_elec                  14 10.1    0.120    0.120    2.372    2.372
- density_rs2pw                       14 11.1    0.001    0.001    2.215    2.215
- pw_gather_s                        128 15.9    1.926    1.926    1.926    1.926
- pw_scatter_s                       140 16.7    1.756    1.756    1.756    1.756
- sum_up_and_integrate                14 11.6    0.053    0.053    1.474    1.474
- integrate_v_rspace                  14 12.6    0.101    0.101    1.421    1.421
- potential_pw2rs                     14 13.6    0.006    0.006    1.318    1.318
- pw_derive                           84 14.1    1.011    1.011    1.011    1.011
- pw_poisson_rebuild                  14 12.6    0.000    0.000    0.796    0.796
- ps_wavelet_create                    1 14.0    0.000    0.000    0.796    0.796
- RS_z_slice_distribution              1 15.0    0.796    0.796    0.796    0.796
+ CP2K                                 1  1.0    0.016    0.016   26.319   26.319
+ cp_geo_opt                           1  2.0    0.000    0.000   25.668   25.668
+ geoopt_bfgs                          1  3.0    0.001    0.001   25.668   25.668
+ cp_eval_at                           2  4.0    0.000    0.000   25.656   25.656
+ qs_forces                            2  5.0    0.000    0.000   25.656   25.656
+ rebuild_ks_matrix                   14  9.6    0.000    0.000   22.802   22.802
+ qs_ks_build_kohn_sham_matrix        14 10.6    0.002    0.002   22.802   22.802
+ qs_energies                          2  6.0    0.000    0.000   22.533   22.533
+ scf_env_do_scf                       2  7.0    0.000    0.000   21.822   21.822
+ scf_env_do_scf_inner_loop           12  8.0    0.002    0.002   21.822   21.822
+ qs_ks_update_qs_env                 12  9.0    0.000    0.000   19.684   19.684
+ qs_vxc_create                       14 11.6    0.000    0.000   13.467   13.467
+ xc_vxc_pw_create                    14 12.6    0.223    0.223   13.467   13.467
+ pw_transfer                        268 13.3    0.027    0.027   12.632   12.632
+ fft_wrap_pw1pw2                    268 14.3    0.003    0.003   12.605   12.605
+ fft_wrap_pw1pw2_150                184 15.3    1.071    1.071   12.315   12.315
+ xc_rho_set_and_dset_create          14 13.6    0.090    0.090    8.616    8.616
+ fft3d_s                            269 16.3    7.674    7.674    7.698    7.698
+ pw_poisson_solve                    14 11.6    0.435    0.435    6.786    6.786
+ xc_functional_eval                  14 14.6    0.000    0.000    5.001    5.001
+ pbe_lda_eval                        14 15.6    5.000    5.000    5.000    5.000
+ ps_wavelet_solve                    14 12.6    3.037    3.037    3.149    3.149
+ qs_ks_update_qs_env_forces           2  6.0    0.000    0.000    3.119    3.119
+ qs_rho_update_rho                   14  9.1    0.000    0.000    2.526    2.526
+ calculate_rho_elec                  14 10.1    0.132    0.132    2.526    2.526
+ density_rs2pw                       14 11.1    0.001    0.001    2.347    2.347
+ pw_gather_s                        128 15.9    1.945    1.945    1.945    1.945
+ pw_scatter_s                       140 16.7    1.862    1.862    1.862    1.862
+ sum_up_and_integrate                14 11.6    0.050    0.050    1.426    1.426
+ integrate_v_rspace                  14 12.6    0.109    0.109    1.376    1.376
+ potential_pw2rs                     14 13.6    0.006    0.006    1.265    1.265
+ pw_derive                           84 14.1    1.114    1.114    1.114    1.114
+ pw_poisson_rebuild                  14 12.6    0.000    0.000    1.010    1.010
+ ps_wavelet_create                    1 14.0    0.000    0.000    1.010    1.010
+ RS_z_slice_distribution              1 15.0    1.010    1.010    1.010    1.010
+ qs_init_subsys                       1  2.0    0.001    0.001    0.606    0.606
+ qs_env_setup                         1  3.0    0.000    0.000    0.538    0.538
+ qs_env_rebuild_pw_env                5  6.0    0.000    0.000    0.537    0.537
+ pw_env_rebuild                       1  5.0    0.000    0.000    0.537    0.537
+ pw_copy                            126 14.2    0.531    0.531    0.531    0.531
+ pw_grid_setup                        4  6.0    0.000    0.000    0.530    0.530
+ pw_grid_setup_internal               4  7.0    0.013    0.013    0.530    0.530
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 16
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2020-09-13 18:21:10.200
+  **** **** ******  **  PROGRAM ENDED AT                 2020-09-14 18:46:36.641
  ***** ** ***  *** **   PROGRAM RAN ON                           LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM RAN BY                                        rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   221
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  2878
   **** **  *******  **  PROGRAM STOPPED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
                                            RT/dioxygen-nvt

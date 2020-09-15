@@ -11,10 +11,10 @@
  DBCSR| Communication thread load                                             87
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2020-09-13 18:21:10.538
+  **** **** ******  **  PROGRAM STARTED AT               2020-09-14 18:46:36.982
  ***** ** ***  *** **   PROGRAM STARTED ON                       LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM STARTED BY                                    rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   232
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  2889
   **** **  *******  **  PROGRAM STARTED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
                                            RT/dioxygen-nvt
@@ -51,12 +51,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal              8262884       8262884       8262884       8262884
- MEMORY| MemFree               1387292       1387292       1387292       1387292
+ MEMORY| MemFree               2093948       2093948       2093948       2093948
  MEMORY| Buffers                 34032         34032         34032         34032
  MEMORY| Cached                 188576        188576        188576        188576
  MEMORY| Slab                    13868         13868         13868         13868
  MEMORY| SReclaimable             6744          6744          6744          6744
- MEMORY| MemLikelyFree         1616644       1616644       1616644       1616644
+ MEMORY| MemLikelyFree         2323300       2323300       2323300       2323300
 
 
  GENERATE|  Preliminary Number of Bonds generated:                             0
@@ -130,8 +130,8 @@
                                                       Number of atoms:         4
                                  Number of Intramolecular constraints:         0
                                  Number of Intermolecular constraints:         0
-                                  Invariants(translation + rotations):         3
-                                                   Degrees of freedom:         9
+                                  Invariants(translation + rotations):         0
+                                                   Degrees of freedom:        12
 
 
  Restraints Information
@@ -140,12 +140,12 @@
 
  THERMOSTAT| Thermostat Info for PARTICLES
  THERMOSTAT| Type of thermostat                               Nose-Hoover-Chains
- THERMOSTAT| Nose-Hoover-Chain length                                          3
+ THERMOSTAT| Nose-Hoover-Chain length                                          5
  THERMOSTAT| Nose-Hoover-Chain time constant [  fs]                      1000.00
  THERMOSTAT| Order of Yoshida integrator                                       3
  THERMOSTAT| Number of multiple time steps                                     2
  THERMOSTAT| Initial Potential Energy                                   0.000000
- THERMOSTAT| Initial Kinetic Energy                                     0.000433
+ THERMOSTAT| Initial Kinetic Energy                                     0.005190
  THERMOSTAT| End of Thermostat Info for PARTICLES
 
  ************************** Velocities initialization **************************
@@ -180,8 +180,8 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.7     0.18668695       -62.2228723479 -6.22E+01
-     2 OT DIIS     0.80E-01    0.7     0.14716674       -62.7335097831 -5.11E-01
+     1 OT DIIS     0.80E-01    0.8     0.18668695       -62.2228723479 -6.22E+01
+     2 OT DIIS     0.80E-01    0.8     0.14716674       -62.7335097831 -5.11E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
@@ -216,8 +216,8 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.5     0.09731795       -63.1320876205 -3.99E-01
-     2 OT DIIS     0.80E-01    0.7     0.11378739       -63.3115565882 -1.79E-01
+     1 OT DIIS     0.80E-01    1.6     0.09731795       -63.1320876205 -3.99E-01
+     2 OT DIIS     0.80E-01    0.8     0.11378739       -63.3115565882 -1.79E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
@@ -252,9 +252,9 @@
 
  ******************************** GO CP2K GO! **********************************
  INITIAL POTENTIAL ENERGY[hartree]     =                     -0.634061163037E+02
- INITIAL KINETIC ENERGY[hartree]       =                      0.389257024958E-02
+ INITIAL KINETIC ENERGY[hartree]       =                      0.519009366611E-02
  INITIAL TEMPERATURE[K]                =                                 273.150
- INITIAL PRESSURE[bar]                 =                     -0.287838811764E+04
+ INITIAL PRESSURE[bar]                 =                     -0.284067565197E+04
  INITIAL VOLUME[bohr^3]                =                      0.674833458309E+04
  INITIAL CELL LNTHS[bohr]   =      0.1889726E+02   0.1889726E+02   0.1889726E+02
  INITIAL CELL ANGLS[deg]    =      0.9000000E+02   0.9000000E+02   0.9000000E+02
@@ -286,27 +286,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.8     0.10150675       -63.4060133551 -6.34E+01
-     2 OT DIIS     0.80E-01    0.8     0.27464909       -62.9777303957  4.28E-01
+     1 OT DIIS     0.80E-01    0.7     0.10141592       -63.4067190158 -6.34E+01
+     2 OT DIIS     0.80E-01    0.8     0.27195837       -62.9765638424  4.30E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996788799        0.0003211201
-  Core density on regular grids:               23.9996617837       -0.0003382163
-  Total charge density on r-space grids:       -0.0000170962
-  Total charge density g-space grids:          -0.0000170962
+  Electronic density on regular grids:        -23.9996694245        0.0003305755
+  Core density on regular grids:               23.9996412198       -0.0003587802
+  Total charge density on r-space grids:       -0.0000282047
+  Total charge density g-space grids:          -0.0000282047
 
   Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.92802876596896
-  Hartree energy:                                              70.54251007431482
-  Exchange-correlation energy:                                -13.34285661658344
-  Dispersion energy:                                           -0.00058430343328
+  Core Hamiltonian energy:                                     45.92745667716405
+  Hartree energy:                                              70.54186253940978
+  Exchange-correlation energy:                                -13.34047137060341
+  Dispersion energy:                                           -0.00058337238030
 
-  Total energy:                                               -62.97773039572843
+  Total energy:                                               -62.97656384240538
 
-  outer SCF iter =    1 RMS gradient =   0.27E+00 energy =        -62.9777303957
+  outer SCF iter =    1 RMS gradient =   0.27E+00 energy =        -62.9765638424
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -322,50 +322,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.5     0.07544250       -63.5321014555 -5.54E-01
-     2 OT DIIS     0.80E-01    0.7     0.23955362       -63.2847887987  2.47E-01
+     1 OT DIIS     0.80E-01    1.6     0.07388206       -63.5305474701 -5.54E-01
+     2 OT DIIS     0.80E-01    0.8     0.23698657       -63.2940977256  2.36E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996838033        0.0003161967
-  Core density on regular grids:               23.9996617837       -0.0003382163
-  Total charge density on r-space grids:       -0.0000220196
-  Total charge density g-space grids:          -0.0000220196
+  Electronic density on regular grids:        -23.9996740652        0.0003259348
+  Core density on regular grids:               23.9996412198       -0.0003587802
+  Total charge density on r-space grids:       -0.0000328454
+  Total charge density g-space grids:          -0.0000328454
 
   Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.38827157924536
-  Hartree energy:                                              70.68128717631248
-  Exchange-correlation energy:                                -13.24893493486834
-  Dispersion energy:                                           -0.00058430343328
+  Core Hamiltonian energy:                                     45.36176887805276
+  Hartree energy:                                              70.69229061092095
+  Exchange-correlation energy:                                -13.24274552618421
+  Dispersion energy:                                           -0.00058337238030
 
-  Total energy:                                               -63.28478879873928
+  Total energy:                                               -63.29409772558630
 
-  outer SCF iter =    2 RMS gradient =   0.24E+00 energy =        -63.2847887987
+  outer SCF iter =    2 RMS gradient =   0.24E+00 energy =        -63.2940977256
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10860027E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10922572E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.616635065836569
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.613317268220847
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                1
  TIME [fs]                    =                                         1.000000
- CONSERVED QUANTITY [hartree] =                              -0.636090744203E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636046557525E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        8.41                 8.41
- ENERGY DRIFT PER ATOM [K]    =         -0.163636944548E+05   0.000000000000E+00
- POTENTIAL ENERGY[hartree]    =         -0.636166350658E+02  -0.636166350658E+02
- KINETIC ENERGY [hartree]     =          0.713046443369E-02   0.713046443369E-02
- TEMPERATURE [K]              =                     500.360              500.360
- PRESSURE [bar]               =         -0.895594718708E+04  -0.895594718708E+04
+ CPU TIME [s]                 =                        8.63                 8.63
+ ENERGY DRIFT PER ATOM [K]    =         -0.164928811321E+05   0.000000000000E+00
+ POTENTIAL ENERGY[hartree]    =         -0.636133172682E+02  -0.636133172682E+02
+ KINETIC ENERGY [hartree]     =          0.347180502111E-02   0.347180502111E-02
+ TEMPERATURE [K]              =                     182.718              182.718
+ PRESSURE [bar]               =         -0.909125872531E+04  -0.909125872531E+04
  *******************************************************************************
 
 
@@ -395,27 +395,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.6     0.10091138       -63.5522190096 -6.36E+01
-     2 OT DIIS     0.80E-01    0.7     0.19380614       -63.2788727078  2.73E-01
+     1 OT DIIS     0.80E-01    0.7     0.09539622       -63.5560188652 -6.36E+01
+     2 OT DIIS     0.80E-01    0.8     0.19033749       -63.3069733853  2.49E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996782696        0.0003217304
-  Core density on regular grids:               23.9996550270       -0.0003449730
-  Total charge density on r-space grids:       -0.0000232426
-  Total charge density g-space grids:          -0.0000232426
+  Electronic density on regular grids:        -23.9996686239        0.0003313761
+  Core density on regular grids:               23.9996489255       -0.0003510745
+  Total charge density on r-space grids:       -0.0000196983
+  Total charge density g-space grids:          -0.0000196983
 
   Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.87000577116457
-  Hartree energy:                                              70.29128718110806
-  Exchange-correlation energy:                                -13.33475258730354
-  Dispersion energy:                                           -0.00058475677866
+  Core Hamiltonian energy:                                     45.77414128521477
+  Hartree energy:                                              70.33857235128191
+  Exchange-correlation energy:                                -13.31427620687853
+  Dispersion energy:                                           -0.00058249893428
 
-  Total energy:                                               -63.27887270780506
+  Total energy:                                               -63.30697338531162
 
-  outer SCF iter =    1 RMS gradient =   0.19E+00 energy =        -63.2788727078
+  outer SCF iter =    1 RMS gradient =   0.19E+00 energy =        -63.3069733853
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -431,50 +431,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.4     0.03351090       -63.6413651604 -3.62E-01
-     2 OT DIIS     0.80E-01    0.6     0.08691801       -63.6129534704  2.84E-02
+     1 OT DIIS     0.80E-01    1.7     0.03068372       -63.6373575167 -3.30E-01
+     2 OT DIIS     0.80E-01    0.9     0.06973028       -63.6194229000  1.79E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996667357        0.0003332643
-  Core density on regular grids:               23.9996550270       -0.0003449730
-  Total charge density on r-space grids:       -0.0000117087
-  Total charge density g-space grids:          -0.0000117087
+  Electronic density on regular grids:        -23.9996619545        0.0003380455
+  Core density on regular grids:               23.9996489255       -0.0003510745
+  Total charge density on r-space grids:       -0.0000130290
+  Total charge density g-space grids:          -0.0000130290
 
   Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.37077888189689
-  Hartree energy:                                              70.35617677528310
-  Exchange-correlation energy:                                -13.23449605477287
-  Dispersion energy:                                           -0.00058475677866
+  Core Hamiltonian energy:                                     45.34209045061772
+  Hartree energy:                                              70.36837749149558
+  Exchange-correlation energy:                                -13.22448002714318
+  Dispersion energy:                                           -0.00058249893428
 
-  Total energy:                                               -63.61295347036704
+  Total energy:                                               -63.61942289995964
 
-  outer SCF iter =    2 RMS gradient =   0.87E-01 energy =        -63.6129534704
+  outer SCF iter =    2 RMS gradient =   0.70E-01 energy =        -63.6194229000
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10977982E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11107021E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.654282962385871
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.648899059941172
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                2
  TIME [fs]                    =                                         2.000000
- CONSERVED QUANTITY [hartree] =                              -0.636380710030E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636378458042E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.57                 5.99
- ENERGY DRIFT PER ATOM [K]    =         -0.186527908779E+05  -0.932639543897E+04
- POTENTIAL ENERGY[hartree]    =         -0.636542829624E+02  -0.636354590141E+02
- KINETIC ENERGY [hartree]     =          0.157865923498E-01   0.114585283918E-01
- TEMPERATURE [K]              =                    1107.779              804.070
- PRESSURE [bar]               =         -0.120169424946E+05  -0.104864448409E+05
+ CPU TIME [s]                 =                        4.37                 6.50
+ ENERGY DRIFT PER ATOM [K]    =         -0.191130253578E+05  -0.955651267892E+04
+ POTENTIAL ENERGY[hartree]    =         -0.636488990599E+02  -0.636311081641E+02
+ KINETIC ENERGY [hartree]     =          0.586436176673E-02   0.466808339392E-02
+ TEMPERATURE [K]              =                     308.636              245.677
+ PRESSURE [bar]               =         -0.125760337939E+05  -0.108336462596E+05
  *******************************************************************************
 
 
@@ -504,27 +504,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.7     0.08650521       -63.5938342471 -6.36E+01
-     2 OT DIIS     0.80E-01    0.7     0.23564905       -63.2736506002  3.20E-01
+     1 OT DIIS     0.80E-01    0.7     0.08735549       -63.5860829289 -6.36E+01
+     2 OT DIIS     0.80E-01    0.8     0.25051498       -63.2372004705  3.49E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996564789        0.0003435211
-  Core density on regular grids:               23.9996560507       -0.0003439493
-  Total charge density on r-space grids:       -0.0000004282
-  Total charge density g-space grids:          -0.0000004282
+  Electronic density on regular grids:        -23.9996592002        0.0003407998
+  Core density on regular grids:               23.9996537468       -0.0003462532
+  Total charge density on r-space grids:       -0.0000054534
+  Total charge density g-space grids:          -0.0000054534
 
-  Overlap energy of the core charge distribution:               0.00000000000002
+  Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.77743368861156
-  Hartree energy:                                              70.37858204798515
-  Exchange-correlation energy:                                -13.32425267382654
-  Dispersion energy:                                           -0.00058534697831
+  Core Hamiltonian energy:                                     45.75501716453748
+  Hartree energy:                                              70.42868399980487
+  Exchange-correlation energy:                                -13.31549183132011
+  Dispersion energy:                                           -0.00058148752845
 
-  Total energy:                                               -63.27365060020360
+  Total energy:                                               -63.23720047050170
 
-  outer SCF iter =    1 RMS gradient =   0.24E+00 energy =        -63.2736506002
+  outer SCF iter =    1 RMS gradient =   0.25E+00 energy =        -63.2372004705
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -540,50 +540,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.4     0.02314487       -63.6589549405 -3.85E-01
-     2 OT DIIS     0.80E-01    0.7     0.05764700       -63.6487807923  1.02E-02
+     1 OT DIIS     0.80E-01    1.6     0.04169236       -63.6445901499 -4.07E-01
+     2 OT DIIS     0.80E-01    0.8     0.14992780       -63.5380297924  1.07E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996548686        0.0003451314
-  Core density on regular grids:               23.9996560507       -0.0003439493
-  Total charge density on r-space grids:        0.0000011822
-  Total charge density g-space grids:           0.0000011822
+  Electronic density on regular grids:        -23.9996596233        0.0003403767
+  Core density on regular grids:               23.9996537468       -0.0003462532
+  Total charge density on r-space grids:       -0.0000058765
+  Total charge density g-space grids:          -0.0000058765
 
-  Overlap energy of the core charge distribution:               0.00000000000002
+  Overlap energy of the core charge distribution:               0.00000000000000
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.39630045836842
-  Hartree energy:                                              70.30319398095935
-  Exchange-correlation energy:                                -13.24286156868340
-  Dispersion energy:                                           -0.00058534697831
+  Core Hamiltonian energy:                                     45.41553321093149
+  Hartree energy:                                              70.39782176582929
+  Exchange-correlation energy:                                -13.24597496561846
+  Dispersion energy:                                           -0.00058148752845
 
-  Total energy:                                               -63.64878079232942
+  Total energy:                                               -63.53802979238162
 
-  outer SCF iter =    2 RMS gradient =   0.58E-01 energy =        -63.6487807923
+  outer SCF iter =    2 RMS gradient =   0.15E+00 energy =        -63.5380297924
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11207699E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11427695E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.667070105946593
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.656075884022520
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                3
  TIME [fs]                    =                                         3.000000
- CONSERVED QUANTITY [hartree] =                              -0.636392963214E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636362231159E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.80                 5.26
- ENERGY DRIFT PER ATOM [K]    =         -0.187495219982E+05  -0.124674376254E+05
- POTENTIAL ENERGY[hartree]    =         -0.636670701059E+02  -0.636459960447E+02
- KINETIC ENERGY [hartree]     =          0.273573454783E-01   0.167581340873E-01
- TEMPERATURE [K]              =                    1919.724             1175.954
- PRESSURE [bar]               =         -0.119093531121E+05  -0.109607475979E+05
+ CPU TIME [s]                 =                        4.29                 5.76
+ ENERGY DRIFT PER ATOM [K]    =         -0.189849244018E+05  -0.126993165865E+05
+ POTENTIAL ENERGY[hartree]    =         -0.636560758840E+02  -0.636394307374E+02
+ KINETIC ENERGY [hartree]     =          0.146676249012E-01   0.800126389635E-02
+ TEMPERATURE [K]              =                     771.944              421.099
+ PRESSURE [bar]               =         -0.123160155123E+05  -0.113277693438E+05
  *******************************************************************************
 
 
@@ -613,27 +613,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.6     0.08271881       -63.6371468191 -6.36E+01
-     2 OT DIIS     0.80E-01    0.9     0.21709243       -63.2832054790  3.54E-01
+     1 OT DIIS     0.80E-01    0.7     0.05368188       -63.6436054757 -6.36E+01
+     2 OT DIIS     0.80E-01    0.8     0.18410609       -63.5008776744  1.43E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996353110        0.0003646890
-  Core density on regular grids:               23.9996529149       -0.0003470851
-  Total charge density on r-space grids:        0.0000176039
-  Total charge density g-space grids:           0.0000176039
+  Electronic density on regular grids:        -23.9996412669        0.0003587331
+  Core density on regular grids:               23.9996544783       -0.0003455217
+  Total charge density on r-space grids:        0.0000132114
+  Total charge density g-space grids:           0.0000132114
 
-  Overlap energy of the core charge distribution:               0.00000000000017
+  Overlap energy of the core charge distribution:               0.00000000000001
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.84081448394053
-  Hartree energy:                                              70.33125456891013
-  Exchange-correlation energy:                                -13.34985979025124
-  Dispersion energy:                                           -0.00058642563311
+  Core Hamiltonian energy:                                     45.48451456979602
+  Hartree energy:                                              70.38905277170437
+  Exchange-correlation energy:                                -13.26903589414416
+  Dispersion energy:                                           -0.00058080579308
 
-  Total energy:                                               -63.28320547902901
+  Total energy:                                               -63.50087767443235
 
-  outer SCF iter =    1 RMS gradient =   0.22E+00 energy =        -63.2832054790
+  outer SCF iter =    1 RMS gradient =   0.18E+00 energy =        -63.5008776744
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -649,50 +649,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.7     0.06461302       -63.6552457174 -3.72E-01
-     2 OT DIIS     0.80E-01    0.7     0.17727864       -63.4494788190  2.06E-01
+     1 OT DIIS     0.80E-01    1.6     0.04085127       -63.6606633394 -1.60E-01
+     2 OT DIIS     0.80E-01    0.8     0.11861031       -63.5895420094  7.11E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996318910        0.0003681090
-  Core density on regular grids:               23.9996529149       -0.0003470851
-  Total charge density on r-space grids:        0.0000210238
-  Total charge density g-space grids:           0.0000210238
+  Electronic density on regular grids:        -23.9996417631        0.0003582369
+  Core density on regular grids:               23.9996544783       -0.0003455217
+  Total charge density on r-space grids:        0.0000127152
+  Total charge density g-space grids:           0.0000127152
 
-  Overlap energy of the core charge distribution:               0.00000000000017
+  Overlap energy of the core charge distribution:               0.00000000000001
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.67893148699135
-  Hartree energy:                                              70.29318464740913
-  Exchange-correlation energy:                                -13.31618021174050
-  Dispersion energy:                                           -0.00058642563311
+  Core Hamiltonian energy:                                     45.45201636071427
+  Hartree energy:                                              70.31985289568300
+  Exchange-correlation energy:                                -13.25600214405782
+  Dispersion energy:                                           -0.00058080579308
 
-  Total energy:                                               -63.44947881896846
+  Total energy:                                               -63.58954200944912
 
-  outer SCF iter =    2 RMS gradient =   0.18E+00 energy =        -63.4494788190
+  outer SCF iter =    2 RMS gradient =   0.12E+00 energy =        -63.5895420094
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11240764E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11483084E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.681811173023199
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.665601786117712
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                4
  TIME [fs]                    =                                         4.000000
- CONSERVED QUANTITY [hartree] =                              -0.636355877608E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636292973441E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.11                 4.97
- ENERGY DRIFT PER ATOM [K]    =         -0.184567546445E+05  -0.139647668802E+05
- POTENTIAL ENERGY[hartree]    =         -0.636818111730E+02  -0.636549498268E+02
- KINETIC ENERGY [hartree]     =          0.458216526540E-01   0.240240137290E-01
- TEMPERATURE [K]              =                    3215.404             1685.817
- PRESSURE [bar]               =         -0.106817750794E+05  -0.108910044683E+05
+ CPU TIME [s]                 =                        4.09                 5.34
+ ENERGY DRIFT PER ATOM [K]    =         -0.184381786139E+05  -0.141340320934E+05
+ POTENTIAL ENERGY[hartree]    =         -0.636656017861E+02  -0.636459734996E+02
+ KINETIC ENERGY [hartree]     =          0.311297408077E-01   0.137833831242E-01
+ TEMPERATURE [K]              =                    1638.330              725.407
+ PRESSURE [bar]               =         -0.114707482886E+05  -0.113635140800E+05
  *******************************************************************************
 
 
@@ -722,27 +722,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.7     0.07432521       -63.6503010347 -6.37E+01
-     2 OT DIIS     0.80E-01    1.0     0.19751071       -63.4346947884  2.16E-01
+     1 OT DIIS     0.80E-01    0.7     0.06928941       -63.6551363575 -6.37E+01
+     2 OT DIIS     0.80E-01    0.8     0.18574351       -63.4564183300  1.99E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995929588        0.0004070412
-  Core density on regular grids:               23.9996638969       -0.0003361031
-  Total charge density on r-space grids:        0.0000709381
-  Total charge density g-space grids:           0.0000709381
+  Electronic density on regular grids:        -23.9996240467        0.0003759533
+  Core density on regular grids:               23.9996426116       -0.0003573884
+  Total charge density on r-space grids:        0.0000185649
+  Total charge density g-space grids:           0.0000185649
 
-  Overlap energy of the core charge distribution:               0.00000000000189
+  Overlap energy of the core charge distribution:               0.00000000000007
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.72010167548306
-  Hartree energy:                                              70.30433855882720
-  Exchange-correlation energy:                                -13.35371853188429
-  Dispersion energy:                                           -0.00058817486085
+  Core Hamiltonian energy:                                     45.68551351866608
+  Hartree energy:                                              70.28747543788813
+  Exchange-correlation energy:                                -13.32399800333830
+  Dispersion energy:                                           -0.00058096725244
 
-  Total energy:                                               -63.43469478842847
+  Total energy:                                               -63.45641833003192
 
-  outer SCF iter =    1 RMS gradient =   0.20E+00 energy =        -63.4346947884
+  outer SCF iter =    1 RMS gradient =   0.19E+00 energy =        -63.4564183300
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -758,50 +758,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.8     0.02062684       -63.6966896794 -2.62E-01
-     2 OT DIIS     0.80E-01    0.6     0.06395468       -63.6803081016  1.64E-02
+     1 OT DIIS     0.80E-01    1.6     0.04716768       -63.6769124815 -2.20E-01
+     2 OT DIIS     0.80E-01    0.8     0.11377727       -63.5952430140  8.17E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996021947        0.0003978053
-  Core density on regular grids:               23.9996638969       -0.0003361031
-  Total charge density on r-space grids:        0.0000617022
-  Total charge density g-space grids:           0.0000617022
+  Electronic density on regular grids:        -23.9996188043        0.0003811957
+  Core density on regular grids:               23.9996426116       -0.0003573884
+  Total charge density on r-space grids:        0.0000238073
+  Total charge density g-space grids:           0.0000238073
 
-  Overlap energy of the core charge distribution:               0.00000000000189
+  Overlap energy of the core charge distribution:               0.00000000000007
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.58333232695732
-  Hartree energy:                                              70.15864772181436
-  Exchange-correlation energy:                                -13.31687165947302
-  Dispersion energy:                                           -0.00058817486085
+  Core Hamiltonian energy:                                     45.56752861748061
+  Hartree energy:                                              70.23648245584666
+  Exchange-correlation energy:                                -13.29384480409861
+  Dispersion energy:                                           -0.00058096725244
 
-  Total energy:                                               -63.68030810155578
+  Total energy:                                               -63.59524301401918
 
-  outer SCF iter =    2 RMS gradient =   0.64E-01 energy =        -63.6803081016
+  outer SCF iter =    2 RMS gradient =   0.11E+00 energy =        -63.5952430140
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11186917E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11432766E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.702543425744892
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.685029249515182
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                5
  TIME [fs]                    =                                         5.000000
- CONSERVED QUANTITY [hartree] =                              -0.636373303222E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636263252890E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.97                 4.77
- ENERGY DRIFT PER ATOM [K]    =         -0.185943188162E+05  -0.148906772674E+05
- POTENTIAL ENERGY[hartree]    =         -0.637025434257E+02  -0.636644685466E+02
- KINETIC ENERGY [hartree]     =          0.648323574952E-01   0.321856824822E-01
- TEMPERATURE [K]              =                    4549.426             2258.538
- PRESSURE [bar]               =         -0.865235128686E+04  -0.104432738320E+05
+ CPU TIME [s]                 =                        4.27                 5.13
+ ENERGY DRIFT PER ATOM [K]    =         -0.182035536968E+05  -0.149479364141E+05
+ POTENTIAL ENERGY[hartree]    =         -0.636850292495E+02  -0.636537846496E+02
+ KINETIC ENERGY [hartree]     =          0.535484845735E-01   0.217364034140E-01
+ TEMPERATURE [K]              =                    2818.209             1143.968
+ PRESSURE [bar]               =         -0.986125222463E+04  -0.110630617089E+05
  *******************************************************************************
 
 
@@ -831,27 +831,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.6     0.05839955       -63.6853706852 -6.37E+01
-     2 OT DIIS     0.80E-01    0.7     0.15682680       -63.5648932588  1.20E-01
+     1 OT DIIS     0.80E-01    0.7     0.04861921       -63.6863704183 -6.37E+01
+     2 OT DIIS     0.80E-01    0.8     0.14024856       -63.5877117383  9.87E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996182106        0.0003817894
-  Core density on regular grids:               23.9996533282       -0.0003466718
-  Total charge density on r-space grids:        0.0000351176
-  Total charge density g-space grids:           0.0000351176
+  Electronic density on regular grids:        -23.9995955703        0.0004044297
+  Core density on regular grids:               23.9996443273       -0.0003556727
+  Total charge density on r-space grids:        0.0000487570
+  Total charge density g-space grids:           0.0000487570
 
-  Overlap energy of the core charge distribution:               0.00000000002356
+  Overlap energy of the core charge distribution:               0.00000000000081
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.93503242813527
-  Hartree energy:                                              70.00493545716867
-  Exchange-correlation energy:                                -13.39944217986833
-  Dispersion energy:                                           -0.00059064825293
+  Core Hamiltonian energy:                                     45.73046198222163
+  Hartree energy:                                              70.13889547197360
+  Exchange-correlation energy:                                -13.35165874857585
+  Dispersion energy:                                           -0.00058212790998
 
-  Total energy:                                               -63.56489325878924
+  Total energy:                                               -63.58771173828529
 
-  outer SCF iter =    1 RMS gradient =   0.16E+00 energy =        -63.5648932588
+  outer SCF iter =    1 RMS gradient =   0.14E+00 energy =        -63.5877117383
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -867,50 +867,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.4     0.01991162       -63.7141013657 -1.49E-01
-     2 OT DIIS     0.80E-01    0.7     0.05340842       -63.7029066215  1.12E-02
+     1 OT DIIS     0.80E-01    1.6     0.02023932       -63.7067642026 -1.19E-01
+     2 OT DIIS     0.80E-01    0.8     0.06054952       -63.6929334661  1.38E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996141245        0.0003858755
-  Core density on regular grids:               23.9996533282       -0.0003466718
-  Total charge density on r-space grids:        0.0000392036
-  Total charge density g-space grids:           0.0000392036
+  Electronic density on regular grids:        -23.9995962340        0.0004037660
+  Core density on regular grids:               23.9996443273       -0.0003556727
+  Total charge density on r-space grids:        0.0000480933
+  Total charge density g-space grids:           0.0000480933
 
-  Overlap energy of the core charge distribution:               0.00000000002356
+  Overlap energy of the core charge distribution:               0.00000000000081
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     45.78382291164254
-  Hartree energy:                                              69.99133062179756
-  Exchange-correlation energy:                                -13.37264119070685
-  Dispersion energy:                                           -0.00059064825293
+  Core Hamiltonian energy:                                     45.60520879753075
+  Hartree energy:                                              70.13567612510812
+  Exchange-correlation energy:                                -13.32840794479706
+  Dispersion energy:                                           -0.00058212790998
 
-  Total energy:                                               -63.70290662149160
+  Total energy:                                               -63.69293346606285
 
-  outer SCF iter =    2 RMS gradient =   0.53E-01 energy =        -63.7029066215
+  outer SCF iter =    2 RMS gradient =   0.61E-01 energy =        -63.6929334661
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11091355E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11538123E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.719511275214948
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.712298712422978
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                6
  TIME [fs]                    =                                         6.000000
- CONSERVED QUANTITY [hartree] =                              -0.636346092273E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636327128402E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.53                 4.56
- ENERGY DRIFT PER ATOM [K]    =         -0.183795056268E+05  -0.154721486606E+05
- POTENTIAL ENERGY[hartree]    =         -0.637195112752E+02  -0.636736423347E+02
- KINETIC ENERGY [hartree]     =          0.845473409160E-01   0.409126255545E-01
- TEMPERATURE [K]              =                    5932.868             2870.927
- PRESSURE [bar]               =         -0.671532056659E+04  -0.982194828777E+04
+ CPU TIME [s]                 =                        4.21                 4.98
+ ENERGY DRIFT PER ATOM [K]    =         -0.187078103822E+05  -0.155745820754E+05
+ POTENTIAL ENERGY[hartree]    =         -0.637122987124E+02  -0.636635369934E+02
+ KINETIC ENERGY [hartree]     =          0.744533559614E-01   0.305225621719E-01
+ TEMPERATURE [K]              =                    3918.414             1606.375
+ PRESSURE [bar]               =         -0.799930726201E+04  -0.105524359678E+05
  *******************************************************************************
 
 
@@ -940,27 +940,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.6     0.03012666       -63.7230054281 -6.37E+01
-     2 OT DIIS     0.80E-01    0.6     0.09117803       -63.6898673640  3.31E-02
+     1 OT DIIS     0.80E-01    0.7     0.06965451       -63.6927783947 -6.37E+01
+     2 OT DIIS     0.80E-01    0.8     0.21501492       -63.4819986314  2.11E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995901748        0.0004098252
-  Core density on regular grids:               23.9996627647       -0.0003372353
-  Total charge density on r-space grids:        0.0000725899
-  Total charge density g-space grids:           0.0000725899
+  Electronic density on regular grids:        -23.9995794238        0.0004205762
+  Core density on regular grids:               23.9996493386       -0.0003506614
+  Total charge density on r-space grids:        0.0000699148
+  Total charge density g-space grids:           0.0000699148
 
-  Overlap energy of the core charge distribution:               0.00000000036117
+  Overlap energy of the core charge distribution:               0.00000000001093
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.05763372327505
-  Hartree energy:                                              69.80160086928949
-  Exchange-correlation energy:                                -13.44367967170081
-  Dispersion energy:                                           -0.00059396925985
+  Core Hamiltonian energy:                                     45.99731940293642
+  Hartree energy:                                              70.03641810457434
+  Exchange-correlation energy:                                -13.41032359850685
+  Dispersion energy:                                           -0.00058422438103
 
-  Total energy:                                               -63.68986736403047
+  Total energy:                                               -63.48199863136167
 
-  outer SCF iter =    1 RMS gradient =   0.91E-01 energy =        -63.6898673640
+  outer SCF iter =    1 RMS gradient =   0.22E+00 energy =        -63.4819986314
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -976,50 +976,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.4     0.02050632       -63.7335176045 -4.37E-02
-     2 OT DIIS     0.80E-01    0.9     0.07497517       -63.7112377604  2.23E-02
+     1 OT DIIS     0.80E-01    1.6     0.03467694       -63.7288332428 -2.47E-01
+     2 OT DIIS     0.80E-01    0.8     0.11770713       -63.6579624337  7.09E-02
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995909926        0.0004090074
-  Core density on regular grids:               23.9996627647       -0.0003372353
-  Total charge density on r-space grids:        0.0000717721
-  Total charge density g-space grids:           0.0000717721
+  Electronic density on regular grids:        -23.9995817627        0.0004182373
+  Core density on regular grids:               23.9996493386       -0.0003506614
+  Total charge density on r-space grids:        0.0000675759
+  Total charge density g-space grids:           0.0000675759
 
-  Overlap energy of the core charge distribution:               0.00000000036117
+  Overlap energy of the core charge distribution:               0.00000000001093
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.04412320878016
-  Hartree energy:                                              69.79047774394563
-  Exchange-correlation energy:                                -13.44041642822103
-  Dispersion energy:                                           -0.00059396925985
+  Core Hamiltonian energy:                                     45.83565220602683
+  Hartree energy:                                              70.00581486934411
+  Exchange-correlation energy:                                -13.39401696867124
+  Dispersion energy:                                           -0.00058422438103
 
-  Total energy:                                               -63.71123776038942
+  Total energy:                                               -63.65796243366588
 
-  outer SCF iter =    2 RMS gradient =   0.75E-01 energy =        -63.7112377604
+  outer SCF iter =    2 RMS gradient =   0.12E+00 energy =        -63.6579624337
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10882252E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11450475E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.737933103001794
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.735333053429891
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                7
  TIME [fs]                    =                                         7.000000
- CONSERVED QUANTITY [hartree] =                              -0.636327314637E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636406258554E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.98                 4.48
- ENERGY DRIFT PER ATOM [K]    =         -0.182312680926E+05  -0.158663085795E+05
- POTENTIAL ENERGY[hartree]    =         -0.637379331030E+02  -0.636828267302E+02
- KINETIC ENERGY [hartree]     =          0.104876039249E+00   0.500502560823E-01
- TEMPERATURE [K]              =                    7359.377             3512.134
- PRESSURE [bar]               =         -0.313544718904E+04  -0.886673384510E+04
+ CPU TIME [s]                 =                        4.11                 4.85
+ ENERGY DRIFT PER ATOM [K]    =         -0.193324927782E+05  -0.161114264615E+05
+ POTENTIAL ENERGY[hartree]    =         -0.637353330534E+02  -0.636737935734E+02
+ KINETIC ENERGY [hartree]     =          0.895913738878E-01   0.389609638456E-01
+ TEMPERATURE [K]              =                    4715.114             2050.481
+ PRESSURE [bar]               =         -0.540570714566E+04  -0.981718899320E+04
  *******************************************************************************
 
 
@@ -1049,27 +1049,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.8     0.02391917       -63.7382836233 -6.37E+01
-     2 OT DIIS     0.80E-01    0.8     0.09715220       -63.6990083416  3.93E-02
+     1 OT DIIS     0.80E-01    0.7     0.05534360       -63.7394404931 -6.37E+01
+     2 OT DIIS     0.80E-01    0.8     0.17993303       -63.5727928318  1.67E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995994925        0.0004005075
-  Core density on regular grids:               23.9996673304       -0.0003326696
-  Total charge density on r-space grids:        0.0000678379
-  Total charge density g-space grids:           0.0000678379
+  Electronic density on regular grids:        -23.9996604347        0.0003395653
+  Core density on regular grids:               23.9996610596       -0.0003389404
+  Total charge density on r-space grids:        0.0000006249
+  Total charge density g-space grids:           0.0000006249
 
-  Overlap energy of the core charge distribution:               0.00000000592151
+  Overlap energy of the core charge distribution:               0.00000000012757
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.34765560170681
-  Hartree energy:                                              69.58825854603658
-  Exchange-correlation energy:                                -13.52949630103987
-  Dispersion energy:                                           -0.00059787827648
+  Core Hamiltonian energy:                                     46.24927039447651
+  Hartree energy:                                              69.75865762625880
+  Exchange-correlation energy:                                -13.47530542751142
+  Dispersion energy:                                           -0.00058710916723
 
-  Total energy:                                               -63.69900834164692
+  Total energy:                                               -63.57279283181126
 
-  outer SCF iter =    1 RMS gradient =   0.97E-01 energy =        -63.6990083416
+  outer SCF iter =    1 RMS gradient =   0.18E+00 energy =        -63.5727928318
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -1085,50 +1085,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.7     0.01824143       -63.7412824610 -4.23E-02
-     2 OT DIIS     0.80E-01    0.7     0.06675352       -63.7205052475  2.08E-02
+     1 OT DIIS     0.80E-01    1.5     0.05375136       -63.7453789512 -1.73E-01
+     2 OT DIIS     0.80E-01    0.8     0.19398042       -63.5461090822  1.99E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996003374        0.0003996626
-  Core density on regular grids:               23.9996673304       -0.0003326696
-  Total charge density on r-space grids:        0.0000669930
-  Total charge density g-space grids:           0.0000669930
+  Electronic density on regular grids:        -23.9996670190        0.0003329810
+  Core density on regular grids:               23.9996610596       -0.0003389404
+  Total charge density on r-space grids:       -0.0000059594
+  Total charge density g-space grids:          -0.0000059594
 
-  Overlap energy of the core charge distribution:               0.00000000592151
+  Overlap energy of the core charge distribution:               0.00000000012757
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.34973096657993
-  Hartree energy:                                              69.56203314851383
-  Exchange-correlation energy:                                -13.52684317428777
-  Dispersion energy:                                           -0.00059787827648
+  Core Hamiltonian energy:                                     46.24941712650772
+  Hartree energy:                                              69.78747832322171
+  Exchange-correlation energy:                                -13.47758910689139
+  Dispersion energy:                                           -0.00058710916723
 
-  Total energy:                                               -63.72050524754445
+  Total energy:                                               -63.54610908219709
 
-  outer SCF iter =    2 RMS gradient =   0.67E-01 energy =        -63.7205052475
+  outer SCF iter =    2 RMS gradient =   0.19E+00 energy =        -63.5461090822
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10517527E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11071565E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.742029790719485
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.740800200663401
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                8
  TIME [fs]                    =                                         8.000000
- CONSERVED QUANTITY [hartree] =                              -0.636366692168E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636267731165E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.21                 4.45
- ENERGY DRIFT PER ATOM [K]    =         -0.185421287364E+05  -0.162007860991E+05
- POTENTIAL ENERGY[hartree]    =         -0.637420297907E+02  -0.636902271127E+02
- KINETIC ENERGY [hartree]     =          0.105062072728E+00   0.569267331631E-01
- TEMPERATURE [K]              =                    7372.431             3994.671
- PRESSURE [bar]               =          0.303854106775E+04  -0.737857448099E+04
+ CPU TIME [s]                 =                        4.07                 4.75
+ ENERGY DRIFT PER ATOM [K]    =         -0.182389068380E+05  -0.163773615086E+05
+ POTENTIAL ENERGY[hartree]    =         -0.637408002007E+02  -0.636821694018E+02
+ KINETIC ENERGY [hartree]     =          0.108917390903E+00   0.477055172277E-01
+ TEMPERATURE [K]              =                    5732.225             2510.699
+ PRESSURE [bar]               =         -0.257081680748E+04  -0.891139246998E+04
  *******************************************************************************
 
 
@@ -1158,27 +1158,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.6     0.04285768       -63.7064546606 -6.37E+01
-     2 OT DIIS     0.80E-01    0.7     0.14387810       -63.6048141782  1.02E-01
+     1 OT DIIS     0.80E-01    0.7     0.14778265       -63.5937291730 -6.36E+01
+     2 OT DIIS     0.80E-01    0.8     0.18230277       -63.1578775250  4.36E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995875789        0.0004124211
-  Core density on regular grids:               23.9996570049       -0.0003429951
-  Total charge density on r-space grids:        0.0000694260
-  Total charge density g-space grids:           0.0000694260
+  Electronic density on regular grids:        -23.9996922286        0.0003077714
+  Core density on regular grids:               23.9996504440       -0.0003495560
+  Total charge density on r-space grids:       -0.0000417846
+  Total charge density g-space grids:          -0.0000417846
 
-  Overlap energy of the core charge distribution:               0.00000005114922
+  Overlap energy of the core charge distribution:               0.00000000232281
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.78875596525066
-  Hartree energy:                                              69.35600498468372
-  Exchange-correlation energy:                                -13.64414507931848
-  Dispersion energy:                                           -0.00060178398148
+  Core Hamiltonian energy:                                     47.30857881872134
+  Hartree energy:                                              69.25324960114609
+  Exchange-correlation energy:                                -13.61428696053551
+  Dispersion energy:                                           -0.00059067061418
 
-  Total energy:                                               -63.60481417821185
+  Total energy:                                               -63.15787752495493
 
-  outer SCF iter =    1 RMS gradient =   0.14E+00 energy =        -63.6048141782
+  outer SCF iter =    1 RMS gradient =   0.18E+00 energy =        -63.1578775250
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -1194,50 +1194,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.5     0.02424047       -63.7186039426 -1.14E-01
-     2 OT DIIS     0.80E-01    0.7     0.06999023       -63.6936778313  2.49E-02
+     1 OT DIIS     0.80E-01    2.0     0.07978241       -63.7024519456 -5.45E-01
+     2 OT DIIS     0.80E-01    1.4     0.27726721       -63.3974844627  3.05E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9995921537        0.0004078463
-  Core density on regular grids:               23.9996570049       -0.0003429951
-  Total charge density on r-space grids:        0.0000648512
-  Total charge density g-space grids:           0.0000648512
+  Electronic density on regular grids:        -23.9997026804        0.0002973196
+  Core density on regular grids:               23.9996504440       -0.0003495560
+  Total charge density on r-space grids:       -0.0000522364
+  Total charge density g-space grids:          -0.0000522364
 
-  Overlap energy of the core charge distribution:               0.00000005114922
+  Overlap energy of the core charge distribution:               0.00000000232281
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     46.76011436830225
-  Hartree energy:                                              69.28027018445492
-  Exchange-correlation energy:                                -13.62863233519196
-  Dispersion energy:                                           -0.00060178398148
+  Core Hamiltonian energy:                                     46.64611288809984
+  Hartree energy:                                              69.64729537929053
+  Exchange-correlation energy:                                -13.58547374577471
+  Dispersion energy:                                           -0.00059067061418
 
-  Total energy:                                               -63.69367783126255
+  Total energy:                                               -63.39748446267120
 
-  outer SCF iter =    2 RMS gradient =   0.70E-01 energy =        -63.6936778313
+  outer SCF iter =    2 RMS gradient =   0.28E+00 energy =        -63.3974844627
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10168326E+03
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.11012220E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.723181581879864
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.751849540181610
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                                9
  TIME [fs]                    =                                         9.000000
- CONSERVED QUANTITY [hartree] =                              -0.636378011528E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636366528321E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        3.97                 4.39
- ENERGY DRIFT PER ATOM [K]    =         -0.186314879086E+05  -0.164708640779E+05
- POTENTIAL ENERGY[hartree]    =         -0.637231815819E+02  -0.636938887204E+02
- KINETIC ENERGY [hartree]     =          0.851017875100E-01   0.600572947572E-01
- TEMPERATURE [K]              =                    5971.775             4214.349
- PRESSURE [bar]               =          0.867668975058E+04  -0.559465623304E+04
+ CPU TIME [s]                 =                        5.67                 4.86
+ ENERGY DRIFT PER ATOM [K]    =         -0.190188477730E+05  -0.166708599824E+05
+ POTENTIAL ENERGY[hartree]    =         -0.637518495402E+02  -0.636899116394E+02
+ KINETIC ENERGY [hartree]     =          0.110078689091E+00   0.546358696570E-01
+ TEMPERATURE [K]              =                    5793.343             2875.437
+ PRESSURE [bar]               =          0.411786668816E+04  -0.746369700797E+04
  *******************************************************************************
 
 
@@ -1267,27 +1267,27 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    0.8     0.02203665       -63.6931427976 -6.37E+01
-     2 OT DIIS     0.80E-01    0.8     0.06939118       -63.6735303965  1.96E-02
+     1 OT DIIS     0.80E-01    1.3     0.17799350       -63.3867437433 -6.34E+01
+     2 OT DIIS     0.80E-01    1.3     0.29825389       -62.7693503215  6.17E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996207457        0.0003792543
-  Core density on regular grids:               23.9996617372       -0.0003382628
-  Total charge density on r-space grids:        0.0000409916
-  Total charge density g-space grids:           0.0000409916
+  Electronic density on regular grids:        -23.9996796118        0.0003203882
+  Core density on regular grids:               23.9996603472       -0.0003396528
+  Total charge density on r-space grids:       -0.0000192646
+  Total charge density g-space grids:          -0.0000192646
 
-  Overlap energy of the core charge distribution:               0.00000018207954
+  Overlap energy of the core charge distribution:               0.00000001574983
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     47.10672432835353
-  Hartree energy:                                              69.03969506469065
-  Exchange-correlation energy:                                -13.71451635648452
-  Dispersion energy:                                           -0.00060529910435
+  Core Hamiltonian energy:                                     47.70264504066284
+  Hartree energy:                                              69.47180201177001
+  Exchange-correlation energy:                                -13.83837483354317
+  Dispersion energy:                                           -0.00059424011235
 
-  Total energy:                                               -63.67353039646066
+  Total energy:                                               -62.76935032146832
 
-  outer SCF iter =    1 RMS gradient =   0.69E-01 energy =        -63.6735303965
+  outer SCF iter =    1 RMS gradient =   0.30E+00 energy =        -62.7693503215
 
   ----------------------------------- OT ---------------------------------------
   Minimizer      : DIIS                : direct inversion
@@ -1303,50 +1303,50 @@
 
   Step     Update method      Time    Convergence         Total energy    Change
   ------------------------------------------------------------------------------
-     1 OT DIIS     0.80E-01    1.7     0.01171677       -63.6995491311 -2.60E-02
-     2 OT DIIS     0.80E-01    0.7     0.03256644       -63.6968485702  2.70E-03
+     1 OT DIIS     0.80E-01    2.6     0.06901699       -63.7155801501 -9.46E-01
+     2 OT DIIS     0.80E-01    1.3     0.19537684       -63.5108075203  2.05E-01
 
   Leaving inner SCF loop after reaching     2 steps.
 
 
-  Electronic density on regular grids:        -23.9996217092        0.0003782908
-  Core density on regular grids:               23.9996617372       -0.0003382628
-  Total charge density on r-space grids:        0.0000400281
-  Total charge density g-space grids:           0.0000400281
+  Electronic density on regular grids:        -23.9996937191        0.0003062809
+  Core density on regular grids:               23.9996603472       -0.0003396528
+  Total charge density on r-space grids:       -0.0000333719
+  Total charge density g-space grids:          -0.0000333719
 
-  Overlap energy of the core charge distribution:               0.00000018207954
+  Overlap energy of the core charge distribution:               0.00000001574983
   Self energy of the core charge distribution:               -166.10482831599549
-  Core Hamiltonian energy:                                     47.10670739770310
-  Hartree energy:                                              69.01591353652282
-  Exchange-correlation energy:                                -13.71403607140414
-  Dispersion energy:                                           -0.00060529910435
+  Core Hamiltonian energy:                                     47.17710498219034
+  Hartree energy:                                              69.11243312186649
+  Exchange-correlation energy:                                -13.69492308399088
+  Dispersion energy:                                           -0.00059424011235
 
-  Total energy:                                               -63.69684857019853
+  Total energy:                                               -63.51080752029205
 
-  outer SCF iter =    2 RMS gradient =   0.33E-01 energy =        -63.6968485702
+  outer SCF iter =    2 RMS gradient =   0.20E+00 energy =        -63.5108075203
   outer SCF loop FAILED to converge after    2 iterations or    4 steps
 
 
  *** WARNING in qs_scf.F:539 :: SCF run NOT converged ***
 
- Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.99810632E+02
+ Writing restart DM twoO2molecules_SCF_DM_SPIN_1_RESTART.dm with checksum:       0.10778398E+03
 
- ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.702606473145977
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):              -63.738410167474896
 
 
  *******************************************************************************
  ENSEMBLE TYPE                =                                              NVT
  STEP NUMBER                  =                                               10
  TIME [fs]                    =                                        10.000000
- CONSERVED QUANTITY [hartree] =                              -0.636364243336E+02
+ CONSERVED QUANTITY [hartree] =                              -0.636357218851E+02
 
                                               INSTANTANEOUS             AVERAGES
- CPU TIME [s]                 =                        4.05                 4.36
- ENERGY DRIFT PER ATOM [K]    =         -0.185227967622E+05  -0.166760573464E+05
- POTENTIAL ENERGY[hartree]    =         -0.637026064731E+02  -0.636947604957E+02
- KINETIC ENERGY [hartree]     =          0.659161198827E-01   0.606431772697E-01
- TEMPERATURE [K]              =                    4625.475             4255.462
- PRESSURE [bar]               =          0.133284128644E+05  -0.370234932329E+04
+ CPU TIME [s]                 =                        6.90                 5.06
+ ENERGY DRIFT PER ATOM [K]    =         -0.189453554081E+05  -0.168983095250E+05
+ POTENTIAL ENERGY[hartree]    =         -0.637384101675E+02  -0.636947614922E+02
+ KINETIC ENERGY [hartree]     =          0.975484358145E-01   0.589271262727E-01
+ TEMPERATURE [K]              =                    5133.887             3101.282
+ PRESSURE [bar]               =          0.606275742009E+04  -0.611105156516E+04
  *******************************************************************************
 
 
@@ -1357,23 +1357,23 @@
  -------------------------------------------------------------------------------
  COUNTER                                    TOTAL       BLAS       SMM       ACC
  flops    13 x    12 x    12               329472     100.0%      0.0%      0.0%
- flops    12 x    12 x    12              1019520     100.0%      0.0%      0.0%
+ flops    12 x    12 x    12               936576     100.0%      0.0%      0.0%
  flops    12 x    12 x    52              2635776     100.0%      0.0%      0.0%
  flops    52 x    12 x    12              2965248     100.0%      0.0%      0.0%
  flops    13 x    13 x    12              4015440     100.0%      0.0%      0.0%
  flops    52 x    12 x    52              4283136     100.0%      0.0%      0.0%
  flops    13 x    12 x    13             14212224     100.0%      0.0%      0.0%
  flops inhomo. stacks                           0       0.0%      0.0%      0.0%
- flops total                        29.460816E+06     100.0%      0.0%      0.0%
- flops max/rank                     29.460816E+06     100.0%      0.0%      0.0%
+ flops total                        29.377872E+06     100.0%      0.0%      0.0%
+ flops max/rank                     29.377872E+06     100.0%      0.0%      0.0%
  matmuls inhomo. stacks                         0       0.0%      0.0%      0.0%
- matmuls total                               5317     100.0%      0.0%      0.0%
- number of processed stacks                  1075     100.0%      0.0%      0.0%
- average stack size                                     4.9       0.0       0.0
- marketing flops                    32.199552E+06
+ matmuls total                               5293     100.0%      0.0%      0.0%
+ number of processed stacks                  1051     100.0%      0.0%      0.0%
+ average stack size                                     5.0       0.0       0.0
+ marketing flops                    32.116608E+06
  -------------------------------------------------------------------------------
- # multiplications                           1097
- max memory usage/rank             300.109824E+06
+ # multiplications                           1073
+ max memory usage/rank             300.077056E+06
  # max total images/rank                        1
  # max 3D layers                                1
  # MPI messages exchanged                       0
@@ -1401,15 +1401,15 @@
  -------------------------------------------------------------------------------
 
  ROUTINE             CALLS      AVE VOLUME [Bytes]
- MP_Group              194
- MP_Bcast             3219                    795.
- MP_Allreduce        11618                    186.
+ MP_Group              206
+ MP_Bcast             3267                    790.
+ MP_Allreduce        11693                    186.
  MP_Sync                 4
- MP_Alltoall          6373                   2217.
- MP_Wait             26328
- MP_ISend             4300                     89.
- MP_IRecv             4300                     89.
- MP_Memory           45096
+ MP_Alltoall          6518                   2190.
+ MP_Wait             25752
+ MP_ISend             4204                     91.
+ MP_IRecv             4204                     91.
+ MP_Memory           44136
  -------------------------------------------------------------------------------
 
 
@@ -1536,52 +1536,54 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.009    0.009   43.968   43.968
- qs_mol_dyn_low                       1  2.0    0.003    0.003   43.626   43.626
- qs_forces                           11  3.9    0.001    0.001   43.363   43.363
- velocity_verlet                     10  3.0    0.001    0.001   39.004   39.004
- rebuild_ks_matrix                   55  8.3    0.000    0.000   35.789   35.789
- qs_ks_build_kohn_sham_matrix        55  9.3    0.007    0.007   35.789   35.789
- qs_energies                         11  4.9    0.001    0.001   35.161   35.161
- scf_env_do_scf                      11  5.9    0.002    0.002   33.123   33.123
- qs_vxc_create                       55 10.3    0.001    0.001   28.364   28.364
- xc_vxc_pw_create                    55 11.3    1.887    1.887   28.363   28.363
- qs_ks_update_qs_env                 66  7.9    0.001    0.001   27.657   27.657
- pw_transfer                       1056 12.1    0.096    0.096   20.642   20.642
- fft_wrap_pw1pw2                    946 13.2    0.011    0.011   20.142   20.142
- fft_wrap_pw1pw2_100                616 14.2    1.722    1.722   19.369   19.369
- scf_env_do_scf_inner_loop           44  6.9    0.006    0.006   18.539   18.539
- xc_rho_set_and_dset_create          55 12.3    0.185    0.185   17.587   17.587
- init_scf_loop                       22  6.9    0.001    0.001   14.576   14.576
- fft3d_s                            947 15.2   12.451   12.451   12.471   12.471
- xc_functional_eval                  55 13.3    0.001    0.001   10.662   10.662
- pbe_lda_eval                        55 14.3   10.661   10.661   10.661   10.661
- qs_ks_update_qs_env_forces          11  4.9    0.000    0.000    8.135    8.135
- qs_rho_update_rho                   55  8.1    0.000    0.000    5.040    5.040
- calculate_rho_elec                  55  9.1    0.488    0.488    5.040    5.040
- density_rs2pw                       55 10.1    0.005    0.005    4.475    4.475
- sum_up_and_integrate                55 10.3    0.100    0.100    3.275    3.275
- integrate_v_rspace                  55 11.3    0.688    0.688    3.175    3.175
- pw_scatter_s                       495 15.6    2.942    2.942    2.942    2.942
- pw_gather_s                        451 14.8    2.937    2.937    2.937    2.937
- pw_derive                          363 12.5    2.480    2.480    2.480    2.480
- potential_pw2rs                     55 12.3    0.014    0.014    2.478    2.478
- pw_poisson_solve                    55 10.3    1.193    1.193    2.061    2.061
- pw_copy                            638 12.7    1.673    1.673    1.673    1.673
- init_scf_run                        11  5.9    0.000    0.000    1.145    1.145
- scf_env_initial_rho_setup           11  6.9    0.000    0.000    1.145    1.145
- dbcsr_multiply_generic            1097 12.4    0.049    0.049    1.009    1.009
- wfi_extrapolate                     11  7.9    0.001    0.001    0.985    0.985
- pw_axpy                            440 11.4    0.963    0.963    0.963    0.963
+ CP2K                                 1  1.0    0.016    0.016   51.067   51.067
+ qs_mol_dyn_low                       1  2.0    0.004    0.004   50.662   50.662
+ qs_forces                           11  3.9    0.001    0.001   50.341   50.341
+ velocity_verlet                     10  3.0    0.001    0.001   45.878   45.878
+ rebuild_ks_matrix                   55  8.3    0.000    0.000   41.387   41.387
+ qs_ks_build_kohn_sham_matrix        55  9.3    0.009    0.009   41.387   41.387
+ qs_energies                         11  4.9    0.001    0.001   40.789   40.789
+ scf_env_do_scf                      11  5.9    0.002    0.002   38.489   38.489
+ qs_vxc_create                       55 10.3    0.001    0.001   32.458   32.458
+ xc_vxc_pw_create                    55 11.3    2.141    2.141   32.457   32.457
+ qs_ks_update_qs_env                 66  7.9    0.001    0.001   31.919   31.919
+ pw_transfer                       1056 12.1    0.117    0.117   24.928   24.928
+ fft_wrap_pw1pw2                    946 13.2    0.013    0.013   24.320   24.320
+ fft_wrap_pw1pw2_100                616 14.2    1.928    1.928   23.301   23.301
+ scf_env_do_scf_inner_loop           44  6.9    0.006    0.006   21.867   21.867
+ xc_rho_set_and_dset_create          55 12.3    0.201    0.201   19.747   19.747
+ init_scf_loop                       22  6.9    0.001    0.001   16.613   16.613
+ fft3d_s                            947 15.2   15.210   15.210   15.233   15.233
+ xc_functional_eval                  55 13.3    0.001    0.001   11.631   11.631
+ pbe_lda_eval                        55 14.3   11.630   11.630   11.630   11.630
+ qs_ks_update_qs_env_forces          11  4.9    0.000    0.000    9.470    9.470
+ qs_rho_update_rho                   55  8.1    0.000    0.000    6.006    6.006
+ calculate_rho_elec                  55  9.1    0.610    0.610    6.006    6.006
+ density_rs2pw                       55 10.1    0.005    0.005    5.318    5.318
+ sum_up_and_integrate                55 10.3    0.106    0.106    3.999    3.999
+ integrate_v_rspace                  55 11.3    0.817    0.817    3.893    3.893
+ pw_gather_s                        451 14.8    3.608    3.608    3.608    3.608
+ pw_scatter_s                       495 15.6    3.465    3.465    3.465    3.465
+ potential_pw2rs                     55 12.3    0.015    0.015    3.066    3.066
+ pw_derive                          363 12.5    2.737    2.737    2.737    2.737
+ pw_poisson_solve                    55 10.3    1.418    1.418    2.382    2.382
+ pw_copy                            638 12.7    1.898    1.898    1.898    1.898
+ init_scf_run                        11  5.9    0.000    0.000    1.325    1.325
+ scf_env_initial_rho_setup           11  6.9    0.000    0.000    1.324    1.324
+ dbcsr_multiply_generic            1073 12.3    0.060    0.060    1.213    1.213
+ wfi_extrapolate                     11  7.9    0.001    0.001    1.147    1.147
+ pw_axpy                            440 11.4    1.053    1.053    1.053    1.053
+ qs_scf_new_mos                      44  7.9    0.000    0.000    1.052    1.052
+ qs_scf_loop_do_ot                   44  8.9    0.000    0.000    1.052    1.052
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 11
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2020-09-13 18:21:54.855
+  **** **** ******  **  PROGRAM ENDED AT                 2020-09-14 18:47:28.439
  ***** ** ***  *** **   PROGRAM RAN ON                           LAPTOP-SAG0HDJD
  **    ****   ******    PROGRAM RAN BY                                        rs
- ***** **    ** ** **   PROGRAM PROCESS ID                                   232
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  2889
   **** **  *******  **  PROGRAM STOPPED IN /mnt/c/Users/rstha/Documents/research
                                            /workflow/cp2kmdpy/cp2kmdpy/tests/SHO
                                            RT/dioxygen-nvt

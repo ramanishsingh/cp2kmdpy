@@ -1,5 +1,0 @@
-/var/spool/slurmd/job08373/slurm_script: line 88: unalias: gvx: not found
-/var/spool/slurmd/job08373/slurm_script: line 89: unalias: gv: not found
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 8373.0 ON cn0007 CANCELLED AT 2020-09-12T13:18:16 DUE TO TIME LIMIT ***
-slurmstepd: error: *** JOB 8373 ON cn0007 CANCELLED AT 2020-09-12T13:18:16 DUE TO TIME LIMIT ***

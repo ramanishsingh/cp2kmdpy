@@ -201,14 +201,25 @@ def md_files(instance):
     seed=instance.seed
     input_filename=instance.input_filename
     output_filename=instance.output_filename
-    
-    filled_box=mb.packing.fill_box(compound=molecules,n_compounds=n_molecules,box=box)
-    initial_coord_file=project_name+".xyz"
-    filled_box.save(initial_coord_file,overwrite='True')
-    with open(initial_coord_file, 'r') as fin:
-        data = fin.read().splitlines(True)
-    with open(initial_coord_file, 'w') as fout:
-        fout.writelines(data[2:]) #deleting first two lines
+    initial_coordinate_filename=instance.initial_coordinate_filename
+
+    if initial_coordinate_filename is None:
+
+        filled_box=mb.packing.fill_box(compound=molecules,n_compounds=n_molecules,box=box)
+        initial_coord_file=project_name+".xyz"
+        filled_box.save(initial_coord_file,overwrite='True')
+        with open(initial_coord_file, 'r') as fin:
+            data = fin.read().splitlines(True)
+        with open(initial_coord_file, 'w') as fout:
+            fout.writelines(data[2:]) #deleting first two lines
+    else:
+        filled_box=mb.load(initial_coordinate_filename)
+        initial_coord_file=project_name+".xyz"
+        filled_box.save(initial_coord_file,overwrite='True')
+        with open(initial_coord_file, 'r') as fin:
+            data = fin.read().splitlines(True)
+        with open(initial_coord_file, 'w') as fout:
+            fout.writelines(data[2:]) #deleting first two lines
     print('MD initial structure saved as {}'.format(initial_coord_file))
     
     atom_list=[];

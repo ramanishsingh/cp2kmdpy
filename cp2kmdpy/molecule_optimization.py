@@ -28,7 +28,7 @@ class Molecule_optimization():
     :type fixed_list: string, optional, for example: if atom # 1 to 10 shall be fixed => fixed_list='1..10'
     :param periodicity: Periodicity of the box
     :type periodiicity: string, optional, defaults to 'XYZ'
-    :param n_iter: Number of iterations for geometru optimization
+    :param n_iter: Number of iterations for geometry optimization
     :type n_iter: positive integer, optional
 
     """
