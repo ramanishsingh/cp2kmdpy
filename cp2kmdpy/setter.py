@@ -6,7 +6,7 @@
 
 import mbuild as mb
 import subprocess
-from cssi_cp2k.classes import SIM as sim
+from mosdef_cp2k_writer.classes import SIM as sim
 import math
 # read this: https://www.cp2k.org/_media/events:2015_cecam_tutorial:watkins_optimization.pdf for more knowledge
 

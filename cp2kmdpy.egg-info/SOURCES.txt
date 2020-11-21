@@ -5,6 +5,7 @@ cp2kmdpy/md.py
 cp2kmdpy/molecule_optimization.py
 cp2kmdpy/runners.py
 cp2kmdpy/runners_mpi.py
+cp2kmdpy/setter.py
 cp2kmdpy.egg-info/PKG-INFO
 cp2kmdpy.egg-info/SOURCES.txt
 cp2kmdpy.egg-info/dependency_links.txt
