@@ -34,7 +34,7 @@ class Molecule_optimization():
     """
 
     def __init__(self,molecule=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None,input_filename=None,output_filename=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None,use_atom_name_as_symbol=True,input_filename=None,output_filename=None):
 
         self.molecule=molecule;
         self.functional=functional;
@@ -47,6 +47,7 @@ class Molecule_optimization():
         self.periodicity=periodicity
         self.fixed_list=fixed_list;
         self.n_iter=n_iter;
+        self.use_atom_name_as_symbol=use_atom_name_as_symbol
         self.input_filename=input_filename;
         self.output_filename=output_filename;
     
@@ -64,7 +65,8 @@ class Molecule_optimization():
         fixed_list=self.fixed_list;
         periodicity=self.periodicity
         n_iter=self.n_iter
-        name=molecule.name;
+        name=molecule.name
+        use_atom_name_as_symbol=self.use_atom_name_as_symbol
 
         if cutoff==None:
             self.cutoff=900;
