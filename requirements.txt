@@ -9,6 +9,7 @@ cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
 docutils==0.16
+ele==0.1.0
 entrypoints==0.3
 foyer==0.7.6
 imagesize==1.2.0
