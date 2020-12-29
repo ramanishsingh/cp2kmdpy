@@ -1,11 +1,11 @@
 import numpy as np
 import mdtraj as md
 import mbuild as mb
-
+import numpy as np
 from cp2kmdpy import runners
 import os
 import unyt as u
-
+import ele
 
 
 
@@ -123,7 +123,7 @@ class MD():
     """
 
     def __init__(self,molecules=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None,input_filename=None,output_filename=None,initial_coordinate_filename=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,simulation_time=None,time_step=None,ensemble=None,project_name=None,temperature=None,pressure=None,n_molecules=None,thermostat=None,traj_type=None,traj_freq=None,seed=None,input_filename=None,output_filename=None,initial_coordinate_filename=None,use_atom_name_as_symbol=True):
         self.molecules=molecules;
         self.functional=functional;
 
@@ -149,6 +149,7 @@ class MD():
         self.input_filename=input_filename
         self.output_filename=output_filename
         self.initial_coordinate_filename=initial_coordinate_filename
+        self.use_atom_name_as_symbol=use_atom_name_as_symbol
 
     def md_initialization(self):
         molecules=self.molecules;
@@ -173,19 +174,47 @@ class MD():
         traj_freq=self.traj_freq
         seed=self.seed
         initial_coordinate_filename=self.initial_coordinate_filename        
-        
-        atom_list=[];
-        mass_list=[];
+        use_atom_name_as_symbol=self.use_atom_name_as_symbol
+
+        atom_list = []
+        mass_list = []
+        symbol_list = []
         for i in range(len(molecules)):
-            current_molecule=mb.clone(molecules[i])
-            current_molecule_pmd=current_molecule.to_parmed()
-            x,y=info_molecule(current_molecule_pmd);
-            atom_list.extend(x)
-            mass_list.extend(y)
-        unique_atom_list=remove_duplicate(atom_list)
-        num_atoms=len(atom_list)
-        num_unique_atoms=len(unique_atom_list)
-        unique_atom_list.sort()
+            current_molecule = mb.clone(molecules[i])
+            for particle in current_molecule.particles():
+                atom_list.append(particle.name)
+                if not (use_atom_name_as_symbol):
+                    symbol_list.append(particle.element)
+                else:
+                    symbol_list.append(particle.name)
+                if use_atom_name_as_symbol:
+                    mass_list.append(
+                        ele.element_from_symbol("{}".format(particle.name)).mass
+                    )
+                else:
+                    mass_list.append(
+                        ele.element_from_symbol("{}".format(particle.element)).mass
+                    )
+
+
+
+        for i in range(len(molecules)):
+            current_molecule = mb.clone(molecules[i])
+            for particle in current_molecule.particles():
+                atom_list.append(particle.name)
+                if not (use_atom_name_as_symbol):
+                    symbol_list.append(particle.element)
+                else:
+                    symbol_list.append(particle.name)
+                if use_atom_name_as_symbol:
+                    mass_list.append(
+                        ele.element_from_symbol("{}".format(particle.name)).mass
+                    )
+                else:
+                    mass_list.append(
+                        ele.element_from_symbol("{}".format(particle.element)).mass
+                    )
+ 
 
         if project_name==None:
             self.project_name='sample_project'

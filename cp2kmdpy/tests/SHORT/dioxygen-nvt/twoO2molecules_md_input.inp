@@ -20,6 +20,8 @@
         YOSHIDA      3
       &END NOSE             
     &END THERMOSTAT       
+    &BAROSTAT       
+    &END BAROSTAT       
     &AVERAGES       
     &END AVERAGES       
     &PRINT       
