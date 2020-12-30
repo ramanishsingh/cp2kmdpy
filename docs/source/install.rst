@@ -5,7 +5,7 @@ Conda installation is recommended. The package can be downloaded from `here <htt
 
 Conda environment
 -----------------
-cp2kmdpy has been built and tested on python 3.6.
+cp2kmdpy has been built and tested on python 3.7.
 You can use the following commands to create a virtual conda environment with all the cp2kmdpy dependencies.
 
 
@@ -13,10 +13,11 @@ You can use the following commands to create a virtual conda environment with al
 >>> conda activate mosdef36
 >>> conda install -c conda-forge openbabel
 >>> pip install unyt
+>>> pip install ele
 >>> git clone https://github.com/ramanishsingh/cp2kmdpy.git
 >>> cd cp2kmdpy
 >>> pip install -e .
->>> git clone https://github.com/ramanishsingh/CSSI-CP2K.git
+>>> git clone https://github.com/ramanishsingh/mosdef_cp2k_writer
 >>> cd CSSI-CP2K
 >>> pip install -e .
 

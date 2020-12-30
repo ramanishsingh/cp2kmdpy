@@ -176,16 +176,34 @@ traj_type
 
 Output trajectory format. Must be a string. Default is ``'PDB'``.
 
+traj_freq
+~~~~~~~~~~
+
+Frequency of storing simulation trajectory. Must be positive integer.
+
 seed
 ~~~~~
 Seed for randomly initializing velocities. Must be a positive integer.
+
+input_filename
+~~~~~~~~~~~~~~
+Name you want to give to the input file that is generated using cp2kmdpy. Default name will be depend on the project name.
+
+output_filename
+~~~~~~~~~~~~~~~~
+Name you want to give to the output file. Default name will be depend on the project name.
 
 initial_coordinate_filename
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In case structure generation from mBuild is not wanted/required, initial coordinates can be specified through this attribute.
 
-Running molecule optimization
+use_atom_name_as_symbol
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to make the atom name different from its symbol, set this flag to ``False``. In that case, you will have to set the ``particle.name`` and ``particle.element`` attributes of the particles in the ``mbuild`` molecule.
+
+Running molecular dynamics
 *********************************
 
 0. Copy the setter.py file from ``cp2kmdpy/setter.py`` and change any settings if needed

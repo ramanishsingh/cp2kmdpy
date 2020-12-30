@@ -102,6 +102,7 @@ periodicity
 ~~~~~~~~~~~
 This attribute controls the periodicity of the box. Default value is ``'XYZ'``
 Consider a system which is periodic in only X and Y direction. It can be specified as follows:
+
 .. code-block:: python
 
   periodicity='XY'

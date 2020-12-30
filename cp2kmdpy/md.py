@@ -117,9 +117,14 @@ class MD():
     :type traj_freq: integer, optional
     :param seed: Random number seed for MD simulation
     :type seed: integer, optional
+    :param input_filename: Name that should be given to the input file
+    :type input_filename: string, optional
+    :param output_filename: Name that should be given to the output file
+    :type output_filename: string, optional
     :param initial_coordinate_filename: Structure filename if user is providing their own initial structure for md
     :type initial_coordinate_filename: string, optional
-
+    :param use_atom_name_as_symbol: If you want the atom name to be same as its symbol. Useful if you have want to use different basis sets for a single atom type in different environment. If you are setting it to false, make sure that the particles in your mbuild molecule have particle.element and particle.name attributes set (particle.element will be the symbol and particle.name will be the name used). 
+    :type use_atom_name_as_symbol: boolean, optional
     """
 
     def __init__(self,molecules=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
