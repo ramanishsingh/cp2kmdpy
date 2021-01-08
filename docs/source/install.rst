@@ -18,7 +18,7 @@ You can use the following commands to create a virtual conda environment with al
 >>> cd cp2kmdpy
 >>> pip install -e .
 >>> git clone https://github.com/ramanishsingh/mosdef_cp2k_writer
->>> cd CSSI-CP2K
+>>> cd mosdef_cp2k_writer
 >>> pip install -e .
 
 
