@@ -4,11 +4,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requires = []
-with open("requirements.txt") as f:
-    install_requires = f.read().splitlines()
 
-print(install_requires)
 
 setuptools.setup(
     name="cp2kmdpy", # Replace with your own username
@@ -20,7 +16,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url='https://github.com/ramanishsingh/cp2kmdpy',
     packages=setuptools.find_packages(),
-    install_requires=install_requires,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
