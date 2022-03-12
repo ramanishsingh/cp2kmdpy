@@ -30,11 +30,13 @@ class Molecule_optimization():
     :type periodiicity: string, optional, defaults to 'XYZ'
     :param n_iter: Number of iterations for geometry optimization
     :type n_iter: positive integer, optional
+    :param initial_coordinate_filename: Structure filename if user is providing their own initial structure to start geo_opt
+    :type initial_coordinate_filename: string, optional
 
     """
 
     def __init__(self,molecule=None, functional=None,box=None,cutoff=None, scf_tolerance=None,
-                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None,use_atom_name_as_symbol=True,input_filename=None,output_filename=None):
+                 basis_set=[None],basis_set_filename=None, potential_filename=None,fixed_list=None, periodicity=None,n_iter=None, initial_coordinate_filename = None, use_atom_name_as_symbol=True,input_filename=None,output_filename=None):
 
         self.molecule=molecule;
         self.functional=functional;
@@ -47,9 +49,11 @@ class Molecule_optimization():
         self.periodicity=periodicity
         self.fixed_list=fixed_list;
         self.n_iter=n_iter;
+        self.initial_coordinate_filename = initial_coordinate_filename;
         self.use_atom_name_as_symbol=use_atom_name_as_symbol
         self.input_filename=input_filename;
         self.output_filename=output_filename;
+       
     
     def optimization_initialization(self):
         
@@ -67,6 +71,7 @@ class Molecule_optimization():
         n_iter=self.n_iter
         name=molecule.name
         use_atom_name_as_symbol=self.use_atom_name_as_symbol
+        initial_coordinate_filename = self.initial_coordinate_filename
 
         if cutoff==None:
             self.cutoff=900;
