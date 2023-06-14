@@ -189,7 +189,7 @@ class MD():
             for particle in current_molecule.particles():
                 atom_list.append(particle.name)
                 if not (use_atom_name_as_symbol):
-                    symbol_list.append(particle.element)
+                    symbol_list.append(particle.element.symbol)
                 else:
                     symbol_list.append(particle.name)
                 if use_atom_name_as_symbol:
@@ -198,7 +198,7 @@ class MD():
                     )
                 else:
                     mass_list.append(
-                        ele.element_from_symbol("{}".format(particle.element)).mass
+                        ele.element_from_symbol("{}".format(particle.element.symbol)).mass
                     )
 
 
@@ -217,7 +217,7 @@ class MD():
                     )
                 else:
                     mass_list.append(
-                        ele.element_from_symbol("{}".format(particle.element)).mass
+                        ele.element_from_symbol("{}".format(particle.element.symbol)).mass
                     )
  
 
